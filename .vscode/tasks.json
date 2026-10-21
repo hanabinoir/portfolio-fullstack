@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Docker Compose: up",
+      "type": "shell",
+      "command": "docker compose up --build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Docker Compose: down",
+      "type": "shell",
+      "command": "docker compose down",
+      "problemMatcher": []
+    },
+    {
+      "label": "Backend tests",
+      "type": "shell",
+      "command": "docker compose exec backend pytest",
+      "problemMatcher": []
+    },
+    {
+      "label": "Frontend tests",
+      "type": "shell",
+      "command": "docker compose exec frontend npm test",
+      "problemMatcher": []
+    }
+  ]
+}
