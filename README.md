@@ -91,6 +91,14 @@ docker compose exec backend python manage.py migrate
 
 Stop the stack with `Ctrl+C` or `docker compose down`. To remove the local database volume as well, run `docker compose down -v` (destructive: this deletes local database data).
 
+After migrations, load the checked-in portfolio snapshot:
+
+```bash
+docker compose exec backend python manage.py loaddata portfolio_seed
+```
+
+The original DOCX-based importer is intentionally removed; the repo keeps a stable fixture snapshot instead so the project continues to work even if the source CV files are later deleted.
+
 ## Configuration and secrets
 
 - `.env.example` is safe to commit. `.env` is ignored by Git.

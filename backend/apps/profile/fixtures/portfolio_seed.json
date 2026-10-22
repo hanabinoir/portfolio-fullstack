@@ -1,0 +1,3688 @@
+[
+{
+  "model": "profile.profile",
+  "pk": "29566b8b-8172-49ce-826c-2de0a66d929d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.880Z",
+    "updated_at": "2026-10-22T09:57:06.880Z",
+    "profile_picture_url": null,
+    "is_active": true
+  }
+},
+{
+  "model": "profile.profiletranslation",
+  "pk": "64185491-c625-4695-bc28-af2a4f129d52",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.882Z",
+    "updated_at": "2026-10-22T09:57:06.882Z",
+    "profile": "29566b8b-8172-49ce-826c-2de0a66d929d",
+    "language_code": "ja",
+    "display_name": "職　務　経　歴　書",
+    "headline": "スマートフォンエンジニア",
+    "summary": "日本で約5年の実務経験を持つスマートフォンエンジニアです。"
+  }
+},
+{
+  "model": "profile.profiletranslation",
+  "pk": "e3da3eb5-c7cc-46e9-bbb8-756a75a3e624",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.882Z",
+    "updated_at": "2026-10-22T09:57:06.882Z",
+    "profile": "29566b8b-8172-49ce-826c-2de0a66d929d",
+    "language_code": "en",
+    "display_name": "Vincent Shen",
+    "headline": "Experienced Smartphone Engineer",
+    "summary": "Experienced Smartphone Engineer with approximately five years of hands-on experience in Japan."
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "499d1090-86cf-498f-bc6f-36cc980fcf98",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.962Z",
+    "updated_at": "2026-10-22T09:57:06.962Z",
+    "name": "PTSC",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "5d477d80-e1cd-4779-ab18-afdb08e8d25d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.950Z",
+    "updated_at": "2026-10-22T09:57:06.950Z",
+    "name": "Rakuten Inc.",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "80fcdaa1-6e54-4e68-90f1-25255cb06089",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.999Z",
+    "updated_at": "2026-10-22T09:57:06.999Z",
+    "name": "Breakfast Courier",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "86070473-a7df-4d14-8c30-51bbbb70ba32",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.885Z",
+    "updated_at": "2026-10-22T09:57:06.885Z",
+    "name": "Railway company",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "8be6b485-9d98-4d53-9f5f-e4396d431991",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.949Z",
+    "updated_at": "2026-10-22T09:57:06.949Z",
+    "name": "Robert Walters",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "aabc5b73-4f17-4579-a91b-1f6ddb858c55",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.981Z",
+    "updated_at": "2026-10-22T09:57:06.981Z",
+    "name": "Shenzhen Tomee Technology Ltd",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "b95eef28-7f9d-4a55-b367-e815e3b5282a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.967Z",
+    "updated_at": "2026-10-22T09:57:06.967Z",
+    "name": "JFX Ltd",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.916Z",
+    "updated_at": "2026-10-22T09:57:06.916Z",
+    "name": "Up-frontier Inc",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organization",
+  "pk": "fbe06afa-8e34-4b2f-a63f-fa13c01ebecd",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.883Z",
+    "updated_at": "2026-10-22T09:57:06.883Z",
+    "name": "NTT Data",
+    "website_url": ""
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "1c3b4edc-7683-4ec2-947e-9c84d67e3439",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.917Z",
+    "updated_at": "2026-10-22T09:57:06.917Z",
+    "organization": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "language_code": "en",
+    "display_name": "Up-frontier Inc"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "1f2a4beb-cfb9-4be7-96e2-da5e3b52a4f1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.950Z",
+    "updated_at": "2026-10-22T09:57:06.950Z",
+    "organization": "5d477d80-e1cd-4779-ab18-afdb08e8d25d",
+    "language_code": "en",
+    "display_name": "Rakuten Inc."
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "21b81d9b-aaca-4e50-900a-4b67adaaeb43",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.963Z",
+    "updated_at": "2026-10-22T09:57:06.963Z",
+    "organization": "499d1090-86cf-498f-bc6f-36cc980fcf98",
+    "language_code": "ja",
+    "display_name": "PTSC"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "249efb9e-0ea5-43b8-b11f-f8becbe06c04",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.917Z",
+    "updated_at": "2026-10-22T09:57:06.917Z",
+    "organization": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "language_code": "ja",
+    "display_name": "Up-frontier Inc"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "479cd2b7-d342-4dff-81df-54b000ce546c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.884Z",
+    "updated_at": "2026-10-22T09:57:06.884Z",
+    "organization": "fbe06afa-8e34-4b2f-a63f-fa13c01ebecd",
+    "language_code": "en",
+    "display_name": "NTT Data"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "4ca12dc7-c0f7-48cf-8fd5-7e83b596f4b9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.890Z",
+    "updated_at": "2026-10-22T09:57:06.890Z",
+    "organization": "86070473-a7df-4d14-8c30-51bbbb70ba32",
+    "language_code": "en",
+    "display_name": "Railway company"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "5a4f781d-908e-416d-95ac-9872350fbf62",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.892Z",
+    "updated_at": "2026-10-22T09:57:06.892Z",
+    "organization": "86070473-a7df-4d14-8c30-51bbbb70ba32",
+    "language_code": "ja",
+    "display_name": "Railway company"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "5fc087cd-95b0-48b4-8645-f3ee9e739d39",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.949Z",
+    "updated_at": "2026-10-22T09:57:06.949Z",
+    "organization": "8be6b485-9d98-4d53-9f5f-e4396d431991",
+    "language_code": "en",
+    "display_name": "Robert Walters"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "6e8375f0-d6af-49bf-a848-4ffecfa99bb8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.999Z",
+    "updated_at": "2026-10-22T09:57:06.999Z",
+    "organization": "80fcdaa1-6e54-4e68-90f1-25255cb06089",
+    "language_code": "en",
+    "display_name": "Breakfast Courier"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "89552717-4789-481e-8685-5ee6d400a034",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.962Z",
+    "updated_at": "2026-10-22T09:57:06.962Z",
+    "organization": "499d1090-86cf-498f-bc6f-36cc980fcf98",
+    "language_code": "en",
+    "display_name": "PTSC"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "a6d2a821-6831-41ed-a16f-e421651ceedf",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.981Z",
+    "updated_at": "2026-10-22T09:57:06.981Z",
+    "organization": "aabc5b73-4f17-4579-a91b-1f6ddb858c55",
+    "language_code": "en",
+    "display_name": "Shenzhen Tomee Technology Ltd"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "a9acd62e-6174-4822-a755-8982a4e843bb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.949Z",
+    "updated_at": "2026-10-22T09:57:06.949Z",
+    "organization": "8be6b485-9d98-4d53-9f5f-e4396d431991",
+    "language_code": "ja",
+    "display_name": "Robert Walters"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "c9165a7a-7d6a-42de-8de0-90b648dc7432",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.981Z",
+    "updated_at": "2026-10-22T09:57:06.981Z",
+    "organization": "aabc5b73-4f17-4579-a91b-1f6ddb858c55",
+    "language_code": "ja",
+    "display_name": "Shenzhen Tomee Technology Ltd"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "cd28c308-5ed7-4f1b-a912-3ad8cff5d329",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.968Z",
+    "updated_at": "2026-10-22T09:57:06.968Z",
+    "organization": "b95eef28-7f9d-4a55-b367-e815e3b5282a",
+    "language_code": "ja",
+    "display_name": "JFX Ltd"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "db324ee0-5f12-4965-b137-7291e9713b05",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.000Z",
+    "updated_at": "2026-10-22T09:57:07.000Z",
+    "organization": "80fcdaa1-6e54-4e68-90f1-25255cb06089",
+    "language_code": "ja",
+    "display_name": "Breakfast Courier"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "e44f6a9c-df6e-4705-9d9d-63538e0c7785",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.884Z",
+    "updated_at": "2026-10-22T09:57:06.884Z",
+    "organization": "fbe06afa-8e34-4b2f-a63f-fa13c01ebecd",
+    "language_code": "ja",
+    "display_name": "NTT Data"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "e5e358a9-9a10-45ff-921b-846ac31bf7e9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.968Z",
+    "updated_at": "2026-10-22T09:57:06.968Z",
+    "organization": "b95eef28-7f9d-4a55-b367-e815e3b5282a",
+    "language_code": "en",
+    "display_name": "JFX Ltd"
+  }
+},
+{
+  "model": "organizations.organizationtranslation",
+  "pk": "e6d84c95-2f30-4fb1-a069-6093a037c447",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.950Z",
+    "updated_at": "2026-10-22T09:57:06.950Z",
+    "organization": "5d477d80-e1cd-4779-ab18-afdb08e8d25d",
+    "language_code": "ja",
+    "display_name": "Rakuten Inc."
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "068ed555-c179-4d68-a15e-e9dc5203f00e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.000Z",
+    "updated_at": "2026-10-22T09:57:07.000Z",
+    "employer": "80fcdaa1-6e54-4e68-90f1-25255cb06089",
+    "client": null,
+    "start_date": "2017-08-01",
+    "end_date": "2017-12-01",
+    "employment_type": "full_time",
+    "order": 12
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "0e14d4d6-1597-4eba-ac6c-06c05ce5dc45",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.917Z",
+    "updated_at": "2026-10-22T09:57:06.917Z",
+    "employer": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "client": null,
+    "start_date": "2025-02-01",
+    "end_date": "2025-10-01",
+    "employment_type": "full_time",
+    "order": 2
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "5a6313d7-481d-496e-a815-b4fd29f02da7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.929Z",
+    "updated_at": "2026-10-22T09:57:06.929Z",
+    "employer": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "client": null,
+    "start_date": "2024-10-01",
+    "end_date": "2025-04-01",
+    "employment_type": "full_time",
+    "order": 3
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "5dc01f64-0a48-46b4-9fcd-bcda5a53b519",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.963Z",
+    "updated_at": "2026-10-22T09:57:06.963Z",
+    "employer": "499d1090-86cf-498f-bc6f-36cc980fcf98",
+    "client": null,
+    "start_date": "2021-07-01",
+    "end_date": "2021-12-01",
+    "employment_type": "full_time",
+    "order": 7
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "61d61dbd-3396-41bc-8ce7-6709fcb201bf",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.982Z",
+    "updated_at": "2026-10-22T09:57:06.982Z",
+    "employer": "aabc5b73-4f17-4579-a91b-1f6ddb858c55",
+    "client": null,
+    "start_date": "2018-08-01",
+    "end_date": "2019-01-01",
+    "employment_type": "full_time",
+    "order": 10
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "7a30f1c9-9f46-4258-8389-22475731e937",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.950Z",
+    "updated_at": "2026-10-22T09:57:06.950Z",
+    "employer": "8be6b485-9d98-4d53-9f5f-e4396d431991",
+    "client": "5d477d80-e1cd-4779-ab18-afdb08e8d25d",
+    "start_date": "2022-01-01",
+    "end_date": "2023-06-01",
+    "employment_type": "full_time",
+    "order": 6
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "85f69ed9-f49b-4f2f-8202-8350415ffd57",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.968Z",
+    "updated_at": "2026-10-22T09:57:06.968Z",
+    "employer": "b95eef28-7f9d-4a55-b367-e815e3b5282a",
+    "client": null,
+    "start_date": "2020-09-01",
+    "end_date": "2020-11-01",
+    "employment_type": "full_time",
+    "order": 8
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "88505fa2-7e7f-47c0-b94d-589a17441e53",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.937Z",
+    "updated_at": "2026-10-22T09:57:06.937Z",
+    "employer": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "client": null,
+    "start_date": "2024-06-01",
+    "end_date": "2025-02-01",
+    "employment_type": "full_time",
+    "order": 4
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "887f28a7-ba51-4eac-ad42-ea9585ffc901",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.894Z",
+    "updated_at": "2026-10-22T09:57:06.894Z",
+    "employer": "fbe06afa-8e34-4b2f-a63f-fa13c01ebecd",
+    "client": "86070473-a7df-4d14-8c30-51bbbb70ba32",
+    "start_date": "2026-03-01",
+    "end_date": "2026-09-01",
+    "employment_type": "full_time",
+    "order": 1
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "c9083397-4dd8-4dc8-8941-3602ed7dc3a9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.976Z",
+    "updated_at": "2026-10-22T09:57:06.976Z",
+    "employer": "b95eef28-7f9d-4a55-b367-e815e3b5282a",
+    "client": null,
+    "start_date": "2019-11-01",
+    "end_date": "2020-08-01",
+    "employment_type": "full_time",
+    "order": 9
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "d80001c8-441e-4875-867f-81745280f3cb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.944Z",
+    "updated_at": "2026-10-22T09:57:06.944Z",
+    "employer": "bb3ee231-d497-4638-af9e-a933bc30b4ae",
+    "client": null,
+    "start_date": "2023-10-01",
+    "end_date": "2024-08-01",
+    "employment_type": "full_time",
+    "order": 5
+  }
+},
+{
+  "model": "experiences.employment",
+  "pk": "db5b9194-6d28-48fe-8bc0-0a1e4867eca6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.992Z",
+    "updated_at": "2026-10-22T09:57:06.992Z",
+    "employer": "aabc5b73-4f17-4579-a91b-1f6ddb858c55",
+    "client": null,
+    "start_date": "2018-04-01",
+    "end_date": "2018-07-01",
+    "employment_type": "full_time",
+    "order": 11
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.898Z",
+    "updated_at": "2026-10-22T09:57:06.898Z",
+    "employment": "887f28a7-ba51-4eac-ad42-ea9585ffc901",
+    "slug": "railway-point-app",
+    "role": "Mobile Developer, PG",
+    "start_date": "2026-03-01",
+    "end_date": "2026-09-01",
+    "team_size": 3,
+    "is_published": true,
+    "order": 1
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.963Z",
+    "updated_at": "2026-10-22T09:57:06.963Z",
+    "employment": "5dc01f64-0a48-46b4-9fcd-bcda5a53b519",
+    "slug": "miraikan-navigation-app",
+    "role": "Mobile Developer, PG",
+    "start_date": "2021-07-01",
+    "end_date": "2021-12-01",
+    "team_size": 1,
+    "is_published": true,
+    "order": 7
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "68f3c024-e93c-453d-848a-5ddb067425c0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.976Z",
+    "updated_at": "2026-10-22T09:57:06.976Z",
+    "employment": "c9083397-4dd8-4dc8-8941-3602ed7dc3a9",
+    "slug": "lion-fx-remake",
+    "role": "Mobile Developer, PG",
+    "start_date": "2019-11-01",
+    "end_date": "2020-08-01",
+    "team_size": 6,
+    "is_published": true,
+    "order": 9
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.992Z",
+    "updated_at": "2026-10-22T09:57:06.992Z",
+    "employment": "db5b9194-6d28-48fe-8bc0-0a1e4867eca6",
+    "slug": "fire-department-training-system",
+    "role": "Web Developer, PG",
+    "start_date": "2018-04-01",
+    "end_date": "2018-07-01",
+    "team_size": 5,
+    "is_published": true,
+    "order": 11
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "88d93303-a7af-48cf-a9e1-c126e2079902",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.929Z",
+    "updated_at": "2026-10-22T09:57:06.929Z",
+    "employment": "5a6313d7-481d-496e-a815-b4fd29f02da7",
+    "slug": "cikoma",
+    "role": "Mobile Developer (Programmer)",
+    "start_date": "2024-10-01",
+    "end_date": "2025-04-01",
+    "team_size": 5,
+    "is_published": true,
+    "order": 3
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "899420c4-e92c-4bf9-8583-706cf08700c2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.937Z",
+    "updated_at": "2026-10-22T09:57:06.937Z",
+    "employment": "88505fa2-7e7f-47c0-b94d-589a17441e53",
+    "slug": "unione",
+    "role": "Mobile Developer (Programmer)",
+    "start_date": "2024-06-01",
+    "end_date": "2025-02-01",
+    "team_size": 4,
+    "is_published": true,
+    "order": 4
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.000Z",
+    "updated_at": "2026-10-22T09:57:07.000Z",
+    "employment": "068ed555-c179-4d68-a15e-e9dc5203f00e",
+    "slug": "restaurant-management-system-official-website",
+    "role": "Web Developer, PG",
+    "start_date": "2017-08-01",
+    "end_date": "2017-12-01",
+    "team_size": 5,
+    "is_published": true,
+    "order": 12
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.950Z",
+    "updated_at": "2026-10-22T09:57:06.950Z",
+    "employment": "7a30f1c9-9f46-4258-8389-22475731e937",
+    "slug": "rakuten-pasha",
+    "role": "Mobile Engineer",
+    "start_date": "2022-01-01",
+    "end_date": "2023-06-01",
+    "team_size": 10,
+    "is_published": true,
+    "order": 6
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.982Z",
+    "updated_at": "2026-10-22T09:57:06.982Z",
+    "employment": "61d61dbd-3396-41bc-8ce7-6709fcb201bf",
+    "slug": "public-facility-management-system",
+    "role": "Web Developer, PG",
+    "start_date": "2018-08-01",
+    "end_date": "2019-01-01",
+    "team_size": 5,
+    "is_published": true,
+    "order": 10
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "f3416435-b173-4601-ba2d-07aa7e217716",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.944Z",
+    "updated_at": "2026-10-22T09:57:06.944Z",
+    "employment": "d80001c8-441e-4875-867f-81745280f3cb",
+    "slug": "wapochi",
+    "role": "Mobile Developer (Programmer)",
+    "start_date": "2023-10-01",
+    "end_date": "2024-08-01",
+    "team_size": 5,
+    "is_published": true,
+    "order": 5
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "f4117363-53b6-42d2-aae8-44027240ff31",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.917Z",
+    "updated_at": "2026-10-22T09:57:06.917Z",
+    "employment": "0e14d4d6-1597-4eba-ac6c-06c05ce5dc45",
+    "slug": "at-home-maid-cafe",
+    "role": "Mobile Developer (Programmer)",
+    "start_date": "2025-02-01",
+    "end_date": "2025-10-01",
+    "team_size": 10,
+    "is_published": true,
+    "order": 2
+  }
+},
+{
+  "model": "experiences.experience",
+  "pk": "f4faa438-d949-4086-bb2e-bef840025628",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.968Z",
+    "updated_at": "2026-10-22T09:57:06.968Z",
+    "employment": "85f69ed9-f49b-4f2f-8202-8350415ffd57",
+    "slug": "lion-fx-update",
+    "role": "Mobile Developer, PG",
+    "start_date": "2020-09-01",
+    "end_date": "2020-11-01",
+    "team_size": 6,
+    "is_published": true,
+    "order": 8
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "222031d4-2a2f-46af-b3f3-22869a2dd2fd",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.951Z",
+    "updated_at": "2026-10-22T09:57:06.951Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "language_code": "en",
+    "title": "Rakuten Pasha",
+    "overview": "Developed and maintained Android and iOS applications for a mobile coupon platform, delivering new features, UI improvements, and performance optimizations while collaborating with cross-functional engineering teams.",
+    "responsibilities": "Enhanced the UI/UX of both Android and iOS applications, maintained HTTP/API communication flows, improved application stability and performance, and collaborated with backend teams to integrate RESTful APIs.",
+    "contributions": "Reduced crashes by approximately 2% through Firebase Crashlytics-driven analysis and optimization, while delivering new UI components and ongoing maintenance for a high-traffic coupon platform."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "292d2f15-cca9-4894-b0bb-4230c4a7de7a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.963Z",
+    "updated_at": "2026-10-22T09:57:06.963Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "language_code": "ja",
+    "title": "Miraikan Navigation App",
+    "overview": "Developed an iOS application for navigation inside a museum.",
+    "responsibilities": "Implemented navigation features with a third-party SDK, added accessibility and TTS features, and integrated the existing website into the iOS app.",
+    "contributions": "Improved museum visitor navigation and accessibility support with a mobile-first experience tailored to the venue environment."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "4808d3ea-25a3-488f-bc70-4d800706f84f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.944Z",
+    "updated_at": "2026-10-22T09:57:06.944Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "language_code": "en",
+    "title": "WaPOCHI",
+    "overview": "Developed Android smartphone and Wear OS applications for remotely controlling connected devices through real-time network communication.",
+    "responsibilities": "Implemented new remote control features with WebSocket communication, improved smartphone and wearable UI/UX, migrated smartphone functionality to Wear OS, and developed additional Wear OS widgets.",
+    "contributions": "Delivered usability improvements and application maintenance for connected-device control experiences across both mobile and wearable interfaces."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "4aea540e-48e1-4fc1-9da4-2fce7c0a80d0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.902Z",
+    "updated_at": "2026-10-22T09:57:06.902Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "language_code": "en",
+    "title": "Railway Point App",
+    "overview": "As part of the support for the construction of a data utilization platform for a railway company.",
+    "responsibilities": "Supported the development, maintenance, and operation of a railway company loyalty-points application and data utilization platform, including requirements analysis, system design, implementation, testing, evaluation, and operational support for iOS and Android mobile applications.",
+    "contributions": "Delivered seven new features and resolved seven defects, producing more than 4,000 lines of code while upgrading iOS 26, Android 16, and third-party libraries; supported Docker image builds and AWS ECR operations."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "516906b9-0e2c-4804-9b3e-900e4845e95c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.977Z",
+    "updated_at": "2026-10-22T09:57:06.977Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "language_code": "en",
+    "title": "LION FX (Remake)",
+    "overview": "Full remake of the existing LION FX iOS application, including design, implementation, testing, and offshore coordination.",
+    "responsibilities": "Designed and created views, prepared technical documents, managed source code, and coordinated with offshore team members as part of a mobile app rebuild for investors.",
+    "contributions": "Rebuilt the iOS experience with a new architecture and documentation flow while keeping cross-team quality control and release management intact."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "52132c89-21d3-4709-8b7c-9dc96035e44c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.951Z",
+    "updated_at": "2026-10-22T09:57:06.951Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "language_code": "ja",
+    "title": "Rakuten Pasha",
+    "overview": "Developed and maintained Android and iOS applications for a mobile coupon platform, delivering new features, UI improvements, and performance optimizations while collaborating with cross-functional engineering teams.",
+    "responsibilities": "Enhanced the UI/UX of both Android and iOS applications, maintained HTTP/API communication flows, improved application stability and performance, and collaborated with backend teams to integrate RESTful APIs.",
+    "contributions": "Reduced crashes by approximately 2% through Firebase Crashlytics-driven analysis and optimization, while delivering new UI components and ongoing maintenance for a high-traffic coupon platform."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "53befb1b-d617-4330-892d-f6b2e0878dac",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.000Z",
+    "updated_at": "2026-10-22T09:57:07.000Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "language_code": "en",
+    "title": "Restaurant Management System and Official Website",
+    "overview": "Built a restaurant management system and official website for operations, ordering, sales statistics, and public-facing pages.",
+    "responsibilities": "Created and tested features, adjusted layouts, and maintained a Laravel 5 MVC system with restaurant operations and customer content workflows.",
+    "contributions": "Delivered a web portal for operational management and a public website for the restaurant business while supporting digital ordering and sales tracking."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "55f3b6d4-ae9c-4371-be3d-511f0c01c550",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.938Z",
+    "updated_at": "2026-10-22T09:57:06.938Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "language_code": "en",
+    "title": "UNIONE",
+    "overview": "Developed an Android application for remotely controlling smart chair functions through network communication.",
+    "responsibilities": "Enhanced the application UI/UX, implemented and maintained HTTP communication features, improved WebSocket functionality, and developed stub servers for testing while supporting integration test and issue resolution.",
+    "contributions": "Validated communication between the mobile application and hardware devices, improving the reliability of remote chair control workflows across Android systems."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "62eb6fbf-d045-4f3f-8d9a-a374d5ae390c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.982Z",
+    "updated_at": "2026-10-22T09:57:06.982Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "language_code": "en",
+    "title": "Public Facility Management System",
+    "overview": "Built a REST API for a municipal facility management system and smartphone app that served staff information, facility status, and nearest-facility lookup features.",
+    "responsibilities": "Designed features, created technical documents, deployed to IIS7, managed source code and releases, designed databases, and validated Redis-backed data flow and frontend functions.",
+    "contributions": "Delivered a facility management backend and smartphone integration layer used for staff operations, facility visibility, and service information delivery."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "6573c1ab-a9c4-496e-8a11-fd77d392eaa4",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.918Z",
+    "updated_at": "2026-10-22T09:57:06.918Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "language_code": "ja",
+    "title": "At-home Maid Cafe",
+    "overview": "Developed and maintained a multi-platform membership and store management solution consisting of an iPad application for customer check-in, an Android membership application, and an iOS membership application.",
+    "responsibilities": "Developed the iPad application from scratch using SwiftUI, implemented new features for Android and iOS with WebView and JavaScript bridge integration, integrated camera functionality with AVFoundation, and collaborated with frontend developers on ReactJS and VueJS-based integration validation.",
+    "contributions": "Delivered feature development, bug fixes, and maintenance across multiple mobile platforms while integrating third-party printer SDKs and supporting a multi-platform customer-facing workflow."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "6603ea4f-153c-4759-b15e-64dd1e8baf15",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.963Z",
+    "updated_at": "2026-10-22T09:57:06.963Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "language_code": "en",
+    "title": "Miraikan Navigation App",
+    "overview": "Developed an iOS application for navigation inside a museum.",
+    "responsibilities": "Implemented navigation features with a third-party SDK, added accessibility and TTS features, and integrated the existing website into the iOS app.",
+    "contributions": "Improved museum visitor navigation and accessibility support with a mobile-first experience tailored to the venue environment."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "6bc19602-8521-4e89-8ba0-72e7181ab1a7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.993Z",
+    "updated_at": "2026-10-22T09:57:06.993Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "language_code": "en",
+    "title": "Fire Department Training System",
+    "overview": "Developed an MVC-based web management system and REST API for collecting training and evaluation data from mobile inputs.",
+    "responsibilities": "Designed and tested features, created technical documents, deployed the website on IIS5, managed source code and releases, and wrote SQL queries for operational data management.",
+    "contributions": "Provided a web platform for training records, evaluation workflows, and mobile data capture for fire-department operations."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "7248a152-c480-4e7f-8e44-4c82fbf43fbe",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.000Z",
+    "updated_at": "2026-10-22T09:57:07.000Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "language_code": "ja",
+    "title": "Restaurant Management System and Official Website",
+    "overview": "Built a restaurant management system and official website for operations, ordering, sales statistics, and public-facing pages.",
+    "responsibilities": "Created and tested features, adjusted layouts, and maintained a Laravel 5 MVC system with restaurant operations and customer content workflows.",
+    "contributions": "Delivered a web portal for operational management and a public website for the restaurant business while supporting digital ordering and sales tracking."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "84e9ec3a-8749-4f8d-afc3-4838c382bedb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.930Z",
+    "updated_at": "2026-10-22T09:57:06.930Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "language_code": "ja",
+    "title": "CiKoMa",
+    "overview": "Maintained and enhanced a Wear OS application for testing and operational support of an autonomous driving system.",
+    "responsibilities": "Improved the application UI/UX with Jetpack Compose, updated WebSocket communication for real-time interaction and testing, resolved Text-to-Speech issues, and built local testing tools using ExpressJS and WebSocket.",
+    "contributions": "Supported feature implementation, debugging, and testing activities while ensuring the wearable app remained compatible with autonomous-driving operational workflows."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "a4674f6d-a6a8-4e8e-ad24-1a9a25d5895f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.982Z",
+    "updated_at": "2026-10-22T09:57:06.982Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "language_code": "ja",
+    "title": "Public Facility Management System",
+    "overview": "Built a REST API for a municipal facility management system and smartphone app that served staff information, facility status, and nearest-facility lookup features.",
+    "responsibilities": "Designed features, created technical documents, deployed to IIS7, managed source code and releases, designed databases, and validated Redis-backed data flow and frontend functions.",
+    "contributions": "Delivered a facility management backend and smartphone integration layer used for staff operations, facility visibility, and service information delivery."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "a9815250-4be8-4726-b9c3-0ada8e97059a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.970Z",
+    "updated_at": "2026-10-22T09:57:06.970Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "language_code": "ja",
+    "title": "LION FX (Update)",
+    "overview": "Updated and extended the existing LION FX application with new views, technical documentation, and cross-team coordination with an offshore development team.",
+    "responsibilities": "Designed, created, and tested views; created technical documents; managed source code; and communicated with offshore team members to support the FX trading application release.",
+    "contributions": "Extended the investor-facing mobile app with refreshed views and documentation while maintaining smooth offshore collaboration across Android and iOS codebases."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "b93d0556-4326-4fee-b9c0-89773d16b4d4",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.938Z",
+    "updated_at": "2026-10-22T09:57:06.938Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "language_code": "ja",
+    "title": "UNIONE",
+    "overview": "Developed an Android application for remotely controlling smart chair functions through network communication.",
+    "responsibilities": "Enhanced the application UI/UX, implemented and maintained HTTP communication features, improved WebSocket functionality, and developed stub servers for testing while supporting integration test and issue resolution.",
+    "contributions": "Validated communication between the mobile application and hardware devices, improving the reliability of remote chair control workflows across Android systems."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "cc789e3f-6fb6-4879-b9b2-49bdbbc212a2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.944Z",
+    "updated_at": "2026-10-22T09:57:06.944Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "language_code": "ja",
+    "title": "WaPOCHI",
+    "overview": "Developed Android smartphone and Wear OS applications for remotely controlling connected devices through real-time network communication.",
+    "responsibilities": "Implemented new remote control features with WebSocket communication, improved smartphone and wearable UI/UX, migrated smartphone functionality to Wear OS, and developed additional Wear OS widgets.",
+    "contributions": "Delivered usability improvements and application maintenance for connected-device control experiences across both mobile and wearable interfaces."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "d011d88b-8d32-4490-81d9-06e90faef28e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.904Z",
+    "updated_at": "2026-10-22T09:57:06.904Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "language_code": "ja",
+    "title": "Railway Point App",
+    "overview": "As part of the support for the construction of a data utilization platform for a railway company.",
+    "responsibilities": "Supported the development, maintenance, and operation of a railway company loyalty-points application and data utilization platform, including requirements analysis, system design, implementation, testing, evaluation, and operational support for iOS and Android mobile applications.",
+    "contributions": "Delivered seven new features and resolved seven defects, producing more than 4,000 lines of code while upgrading iOS 26, Android 16, and third-party libraries; supported Docker image builds and AWS ECR operations."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "d58e8a31-7b5c-45e9-a911-7fdc2f3e71b0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.993Z",
+    "updated_at": "2026-10-22T09:57:06.993Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "language_code": "ja",
+    "title": "Fire Department Training System",
+    "overview": "Developed an MVC-based web management system and REST API for collecting training and evaluation data from mobile inputs.",
+    "responsibilities": "Designed and tested features, created technical documents, deployed the website on IIS5, managed source code and releases, and wrote SQL queries for operational data management.",
+    "contributions": "Provided a web platform for training records, evaluation workflows, and mobile data capture for fire-department operations."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "e3016b13-7123-4e76-9f8a-42f26139b7a7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.930Z",
+    "updated_at": "2026-10-22T09:57:06.930Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "language_code": "en",
+    "title": "CiKoMa",
+    "overview": "Maintained and enhanced a Wear OS application for testing and operational support of an autonomous driving system.",
+    "responsibilities": "Improved the application UI/UX with Jetpack Compose, updated WebSocket communication for real-time interaction and testing, resolved Text-to-Speech issues, and built local testing tools using ExpressJS and WebSocket.",
+    "contributions": "Supported feature implementation, debugging, and testing activities while ensuring the wearable app remained compatible with autonomous-driving operational workflows."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "f0f2bd71-1e6d-41dc-a58f-d74f26f2d30e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.969Z",
+    "updated_at": "2026-10-22T09:57:06.969Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "language_code": "en",
+    "title": "LION FX (Update)",
+    "overview": "Updated and extended the existing LION FX application with new views, technical documentation, and cross-team coordination with an offshore development team.",
+    "responsibilities": "Designed, created, and tested views; created technical documents; managed source code; and communicated with offshore team members to support the FX trading application release.",
+    "contributions": "Extended the investor-facing mobile app with refreshed views and documentation while maintaining smooth offshore collaboration across Android and iOS codebases."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "f4c57b89-0d4b-41c2-9969-d48b8c24f6b2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.977Z",
+    "updated_at": "2026-10-22T09:57:06.977Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "language_code": "ja",
+    "title": "LION FX (Remake)",
+    "overview": "Full remake of the existing LION FX iOS application, including design, implementation, testing, and offshore coordination.",
+    "responsibilities": "Designed and created views, prepared technical documents, managed source code, and coordinated with offshore team members as part of a mobile app rebuild for investors.",
+    "contributions": "Rebuilt the iOS experience with a new architecture and documentation flow while keeping cross-team quality control and release management intact."
+  }
+},
+{
+  "model": "experiences.experiencetranslation",
+  "pk": "f70393d4-9401-4531-b174-b93390b4674b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.918Z",
+    "updated_at": "2026-10-22T09:57:06.918Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "language_code": "en",
+    "title": "At-home Maid Cafe",
+    "overview": "Developed and maintained a multi-platform membership and store management solution consisting of an iPad application for customer check-in, an Android membership application, and an iOS membership application.",
+    "responsibilities": "Developed the iPad application from scratch using SwiftUI, implemented new features for Android and iOS with WebView and JavaScript bridge integration, integrated camera functionality with AVFoundation, and collaborated with frontend developers on ReactJS and VueJS-based integration validation.",
+    "contributions": "Delivered feature development, bug fixes, and maintenance across multiple mobile platforms while integrating third-party printer SDKs and supporting a multi-platform customer-facing workflow."
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "3fd3b08f-2d05-4de3-9b74-e05ef8c659d1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.938Z",
+    "updated_at": "2026-10-22T09:57:06.938Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "4cb30459-a2c5-401d-af2d-ec600f941444",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.944Z",
+    "updated_at": "2026-10-22T09:57:06.944Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "7620e295-77ef-4b5b-8842-410f3e08113b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.983Z",
+    "updated_at": "2026-10-22T09:57:06.983Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "7787d573-76da-447a-930a-cc55b2358070",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.964Z",
+    "updated_at": "2026-10-22T09:57:06.964Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "8122fbf9-d96f-4948-a371-16d9008f1dd0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.918Z",
+    "updated_at": "2026-10-22T09:57:06.918Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "84af31c3-b512-456a-91f1-9b528b31467f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.993Z",
+    "updated_at": "2026-10-22T09:57:06.993Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "8d0808f9-f1b1-49a3-ab41-e8914e45523f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.001Z",
+    "updated_at": "2026-10-22T09:57:07.001Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "8ea97dc9-a8c8-49d1-9fc2-e432f4d7ccf8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.951Z",
+    "updated_at": "2026-10-22T09:57:06.951Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "9c1e71f5-9655-4074-8501-91ff0e7e4eb9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.977Z",
+    "updated_at": "2026-10-22T09:57:06.977Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "aa41a351-d113-42dc-8766-683be2b8563c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.930Z",
+    "updated_at": "2026-10-22T09:57:06.930Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "c2f0a619-1057-4e8f-aa8b-bd2d0be2b87f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.904Z",
+    "updated_at": "2026-10-22T09:57:06.904Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experiencephase",
+  "pk": "ebb15247-55bb-42bc-b9a0-fb588a02120e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.970Z",
+    "updated_at": "2026-10-22T09:57:06.970Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "phase_name": "Core delivery",
+    "phase_order": 1
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "0062dd17-0b62-40d3-b98a-e25f3db8baaa",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.964Z",
+    "updated_at": "2026-10-22T09:57:06.964Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "038ac699-501d-4971-85fa-2cd02250a7d9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.003Z",
+    "updated_at": "2026-10-22T09:57:07.003Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "06f8db16-94d8-4bba-9d72-168b19b991f2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.979Z",
+    "updated_at": "2026-10-22T09:57:06.979Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "skill": "295b7013-a3b3-44f3-9131-65ab1422dbb1",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "09c47c1a-60db-48cc-8240-1f443acf59e3",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.961Z",
+    "updated_at": "2026-10-22T09:57:06.961Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "0a657f31-816c-4deb-b4bb-e291ec8af0ca",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.916Z",
+    "updated_at": "2026-10-22T09:57:06.916Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "31d5431f-6f7b-4eb7-9b70-e0516c60707a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "0b7ae886-adf2-4c6d-90e1-6eeb5dff18ef",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.958Z",
+    "updated_at": "2026-10-22T09:57:06.958Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "d63df047-5289-47eb-8770-3e73ee801458",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "0edb0e58-06d6-409b-8552-d8c876f080e0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.995Z",
+    "updated_at": "2026-10-22T09:57:06.995Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "11e7af4b-d14f-4b6e-995d-2f6c87bcc9e0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.915Z",
+    "updated_at": "2026-10-22T09:57:06.915Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "15509c73-42cd-4a5b-b714-3758ee2d9c38",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1358f47d-e544-483f-8f20-04c290af424d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.928Z",
+    "updated_at": "2026-10-22T09:57:06.928Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "15dcbd47-035c-4826-92ab-e9038561d527",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.002Z",
+    "updated_at": "2026-10-22T09:57:07.002Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "099330ac-7dd3-460a-9fc9-15dc627fe38d",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1a831289-8702-4d7c-9e14-72cfcc6ac09a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.911Z",
+    "updated_at": "2026-10-22T09:57:06.911Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1a9f32e1-9cda-416e-9b71-dfd5e19b58c7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.996Z",
+    "updated_at": "2026-10-22T09:57:06.996Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "8ee170a3-c61c-4d13-a33b-333aa08c8138",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1b4fd820-eef8-400c-987f-f0b726ae24f3",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.910Z",
+    "updated_at": "2026-10-22T09:57:06.910Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1c66fc14-c5cf-414b-bfe3-5e60f9361687",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.955Z",
+    "updated_at": "2026-10-22T09:57:06.955Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1f32133f-a991-41d0-bd66-b3f3957fb7df",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.997Z",
+    "updated_at": "2026-10-22T09:57:06.997Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1f5fd7ce-fa01-4ff6-a08e-5f47c14d9af6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.987Z",
+    "updated_at": "2026-10-22T09:57:06.987Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "a18fea93-1a44-4ed4-b359-079af259db32",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "1ff69fc8-1212-4280-a396-8f98ffa5f19b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.948Z",
+    "updated_at": "2026-10-22T09:57:06.948Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "skill": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "207f3592-8a73-423d-a662-a1546b5c352a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.962Z",
+    "updated_at": "2026-10-22T09:57:06.962Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "dfa2ed53-e3ef-44ce-bfb4-3a4280b34aee",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "20f76414-602a-4cc2-b67e-7281c213ead1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.976Z",
+    "updated_at": "2026-10-22T09:57:06.976Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "dfa2ed53-e3ef-44ce-bfb4-3a4280b34aee",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "30b01757-ca10-4c9a-812c-8dd8ec31b27f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.920Z",
+    "updated_at": "2026-10-22T09:57:06.920Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "260dc909-2e6d-4c99-a7dc-3c9e297dd784",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "33b56e86-f16e-4ba7-819e-b99fd1d1b11f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.006Z",
+    "updated_at": "2026-10-22T09:57:07.006Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "d63df047-5289-47eb-8770-3e73ee801458",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "35f3c9e0-2062-4aa6-8a6c-4960e0a091b3",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.005Z",
+    "updated_at": "2026-10-22T09:57:07.005Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "57b90d45-0fe7-4b33-8b09-cb75452cb21c",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "35f4b3d2-ec3d-431b-934e-135e6cb83a2b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.999Z",
+    "updated_at": "2026-10-22T09:57:06.999Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "91064617-fdea-4846-9a69-18fcb28a478e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "365df435-efd6-4fde-81fb-7e62e1553604",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.988Z",
+    "updated_at": "2026-10-22T09:57:06.988Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "37daf9a2-9475-4aeb-ba51-ddb156bbaf0b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.984Z",
+    "updated_at": "2026-10-22T09:57:06.984Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "daf55473-8288-47ca-b531-1c4b8ec93c76",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "386b1022-7094-4c22-9331-d50ab982630a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.967Z",
+    "updated_at": "2026-10-22T09:57:06.967Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "skill": "4d6694d9-dc42-45a4-a4c0-b2a7aa3fb23b",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "38f64135-3704-409c-afaf-b984debe84a2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.945Z",
+    "updated_at": "2026-10-22T09:57:06.945Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "skill": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "3b322675-27f2-45a6-9edd-657d0bd85f3b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.909Z",
+    "updated_at": "2026-10-22T09:57:06.909Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "86b62907-984b-4710-ad89-8072489a2145",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "41272167-e7c0-4c2f-a590-4205578652e0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.998Z",
+    "updated_at": "2026-10-22T09:57:06.998Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "edcbe9e8-d49b-4907-a5cb-f14093b6b99e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "46e79f24-b198-4d14-99c6-c6513402e38a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.923Z",
+    "updated_at": "2026-10-22T09:57:06.923Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "4b336d65-7325-492a-b422-157eac215e1c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.974Z",
+    "updated_at": "2026-10-22T09:57:06.974Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "4c293ced-a6c5-46a7-a2f5-b4f6128c9f45",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.929Z",
+    "updated_at": "2026-10-22T09:57:06.929Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "4e3f470f-d9ef-4349-8b8b-02c9f31161d6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.971Z",
+    "updated_at": "2026-10-22T09:57:06.971Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "509e1693-62b4-46d8-969a-34e3aa27a27c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.913Z",
+    "updated_at": "2026-10-22T09:57:06.913Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "521c0c80-70dd-4893-97c4-696c01fcb9fc",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.006Z",
+    "updated_at": "2026-10-22T09:57:07.006Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "a18fea93-1a44-4ed4-b359-079af259db32",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "54d9d096-5a9d-414a-92f7-424ff176abcd",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.960Z",
+    "updated_at": "2026-10-22T09:57:06.960Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "8716b885-7f8e-4ef6-b2a4-f933eceaa427",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "55088637-a354-464b-a6ea-ef1f968ae3aa",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.931Z",
+    "updated_at": "2026-10-22T09:57:06.931Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "56e97ae9-8ed8-4ed5-8bb2-4af544cdb6d0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.935Z",
+    "updated_at": "2026-10-22T09:57:06.935Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "3fc07236-b223-489e-9cc0-a10458fbcbda",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "5757a289-4b50-4c83-8e9f-b4937a8fc6bb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.933Z",
+    "updated_at": "2026-10-22T09:57:06.934Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "57eb91c3-7238-47db-a697-a1deb82c5e48",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.947Z",
+    "updated_at": "2026-10-22T09:57:06.947Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "skill": "8d51b3a4-5ec4-4368-8cd1-0bab70f0575e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "57f87f22-1f70-4a5b-9628-6bc923113845",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.927Z",
+    "updated_at": "2026-10-22T09:57:06.927Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "595243ed-71f7-4576-9e17-d8111688de54",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.957Z",
+    "updated_at": "2026-10-22T09:57:06.957Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "376f3bf6-1287-4e1b-82ba-cd2c35f692f9",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "5ddbd811-8994-4dd7-afa7-7babd569bab9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.966Z",
+    "updated_at": "2026-10-22T09:57:06.966Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "skill": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "5f6ce3f9-54d0-4cb9-9235-455f11ababaa",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.996Z",
+    "updated_at": "2026-10-22T09:57:06.996Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "a18fea93-1a44-4ed4-b359-079af259db32",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "6033a9d9-5b2c-42b8-8231-ac5e4f13bdb6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.992Z",
+    "updated_at": "2026-10-22T09:57:06.992Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "3826c8ed-ddb1-4885-a835-2ea5220b119f",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "66a04272-3466-48c2-86ef-bed746d86dba",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.978Z",
+    "updated_at": "2026-10-22T09:57:06.978Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "711b54fa-a95d-4ebb-8827-038a65d55e0d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.981Z",
+    "updated_at": "2026-10-22T09:57:06.981Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "73cbb2d8-3246-4322-a6a7-de1483904953",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.941Z",
+    "updated_at": "2026-10-22T09:57:06.941Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "skill": "8b669e15-3ce2-46b2-830c-ef5d9594ea82",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "7ca8c9b2-65a0-46b3-9946-7e34c6cdb15a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.921Z",
+    "updated_at": "2026-10-22T09:57:06.921Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "7d09ee57-6796-4444-a18b-f0de3680fa5c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.971Z",
+    "updated_at": "2026-10-22T09:57:06.971Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "84ae0c17-760a-4415-ae32-4e9878ec4be6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.942Z",
+    "updated_at": "2026-10-22T09:57:06.942Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "skill": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "86029d75-89ab-4755-b165-bb8ad39be648",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.933Z",
+    "updated_at": "2026-10-22T09:57:06.933Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "3e83d12f-0ba7-4cc0-83a4-acd13719e9a2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "87c1a20c-255f-47d5-a84a-b2c57351f393",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.975Z",
+    "updated_at": "2026-10-22T09:57:06.975Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "8caba3ad-e87d-47cf-b097-ab0c008382a2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.004Z",
+    "updated_at": "2026-10-22T09:57:07.004Z",
+    "experience": "9bd7344d-9cff-4120-abfb-6a6da8e2bcfa",
+    "skill": "482e83aa-37e5-4dba-8485-d32ac47fa818",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "8ea8900d-b6ad-477b-850c-9618218fcc22",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.953Z",
+    "updated_at": "2026-10-22T09:57:06.953Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "920ed397-cb1e-4169-b832-60e4fa6c0f47",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.936Z",
+    "updated_at": "2026-10-22T09:57:06.936Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "2eb9ce37-d89d-439b-a3bc-482824dd83be",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "959298de-48eb-4f39-bf52-f43f42a5de18",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.972Z",
+    "updated_at": "2026-10-22T09:57:06.972Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "86b62907-984b-4710-ad89-8072489a2145",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "a27866ba-3bcf-44ec-adf9-87708ec26355",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.984Z",
+    "updated_at": "2026-10-22T09:57:06.984Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "a302b6b3-4ba1-4e52-b642-87561f9a664e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.914Z",
+    "updated_at": "2026-10-22T09:57:06.914Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "41caf381-67db-4237-ace5-294fc2eb87e7",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "a61d4faf-03ab-4a2d-92f5-823ef27ab22f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.986Z",
+    "updated_at": "2026-10-22T09:57:06.986Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "8ee170a3-c61c-4d13-a33b-333aa08c8138",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "b290a135-2b4b-4cdb-81c6-7b2b6fb86ee4",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.925Z",
+    "updated_at": "2026-10-22T09:57:06.925Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "4d6694d9-dc42-45a4-a4c0-b2a7aa3fb23b",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "b4a6b8b5-a27b-436f-a044-2992716de3db",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.973Z",
+    "updated_at": "2026-10-22T09:57:06.973Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "bc70eba5-0ded-4424-9852-f8cc0f41c2cc",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.990Z",
+    "updated_at": "2026-10-22T09:57:06.990Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "edcbe9e8-d49b-4907-a5cb-f14093b6b99e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "bf4fe0d9-940a-4e9b-8a58-1468fc078c43",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.966Z",
+    "updated_at": "2026-10-22T09:57:06.966Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "c401a024-f98d-433d-af16-e8e7b0cc74e2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.926Z",
+    "updated_at": "2026-10-22T09:57:06.926Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "425838ab-6b0d-4c00-a7fc-fc502b6fc778",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "d1179101-ef25-4d0d-96e3-07c55a3de63e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.994Z",
+    "updated_at": "2026-10-22T09:57:06.994Z",
+    "experience": "6932c2bd-8a05-4aa5-b0b4-c198b0e9f5bf",
+    "skill": "daf55473-8288-47ca-b531-1c4b8ec93c76",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "d31506c3-439d-4aa1-b8ff-9e62665b91d8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.946Z",
+    "updated_at": "2026-10-22T09:57:06.946Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "skill": "68dbcbe0-c388-4385-b249-bb84182f0d7c",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "d9355ad5-19f3-4d36-a8a3-0e0cb2b3fd6c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.956Z",
+    "updated_at": "2026-10-22T09:57:06.956Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "dbc1fa4b-a36f-4ada-a6cf-212b694e8dee",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.908Z",
+    "updated_at": "2026-10-22T09:57:06.908Z",
+    "experience": "12626e90-8aed-4df6-9e52-d4f019ecd02c",
+    "skill": "260dc909-2e6d-4c99-a7dc-3c9e297dd784",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "e12fda9d-f407-4544-8df4-baf77628b187",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.980Z",
+    "updated_at": "2026-10-22T09:57:06.980Z",
+    "experience": "68f3c024-e93c-453d-848a-5ddb067425c0",
+    "skill": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "e50526fa-fa79-4220-bb24-c39709d305f0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.943Z",
+    "updated_at": "2026-10-22T09:57:06.943Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "skill": "8d51b3a4-5ec4-4368-8cd1-0bab70f0575e",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "e69c474b-6bdd-4066-95dc-2605727fed8c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.932Z",
+    "updated_at": "2026-10-22T09:57:06.932Z",
+    "experience": "88d93303-a7af-48cf-a9e1-c126e2079902",
+    "skill": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "e7e0eeba-869e-41c5-8ce6-f9de6e17e136",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.954Z",
+    "updated_at": "2026-10-22T09:57:06.954Z",
+    "experience": "c5c997c8-214b-4fe3-9fb0-a07ce8d996bb",
+    "skill": "86b62907-984b-4710-ad89-8072489a2145",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "ea6bce2f-505c-48dc-9505-3ee666b709ed",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.949Z",
+    "updated_at": "2026-10-22T09:57:06.949Z",
+    "experience": "f3416435-b173-4601-ba2d-07aa7e217716",
+    "skill": "3fc07236-b223-489e-9cc0-a10458fbcbda",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "ed2833bb-680f-497b-bf38-2b093e7bec7a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.922Z",
+    "updated_at": "2026-10-22T09:57:06.922Z",
+    "experience": "f4117363-53b6-42d2-aae8-44027240ff31",
+    "skill": "9c5c2b39-87a3-4945-8c3e-acb47841fe46",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "f1c1fbcb-f5f3-4360-876f-04901990ed7d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.989Z",
+    "updated_at": "2026-10-22T09:57:06.989Z",
+    "experience": "caa952a0-aa3e-4548-9c6c-e97aa9dff0c4",
+    "skill": "63fc4361-44ab-430c-9d3d-4ebaaa85aef1",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "f3555aaf-cd35-4ac8-acae-88a9f8342917",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.940Z",
+    "updated_at": "2026-10-22T09:57:06.940Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "skill": "bceb1a57-0ee9-4733-8d2f-4aefd030bb9d",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "f5d9cc49-f8a2-4ecd-9232-d9bc1ee49cc1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.965Z",
+    "updated_at": "2026-10-22T09:57:06.965Z",
+    "experience": "2df23fe8-a107-4a65-982c-fb6786a0596d",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "febd4274-a843-4e67-a673-5bf2e78b4b8c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.939Z",
+    "updated_at": "2026-10-22T09:57:06.939Z",
+    "experience": "899420c4-e92c-4bf9-8583-706cf08700c2",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "order": 0
+  }
+},
+{
+  "model": "experiences.experienceskill",
+  "pk": "fec6a6d4-c914-4933-a717-d294ec929945",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.974Z",
+    "updated_at": "2026-10-22T09:57:06.974Z",
+    "experience": "f4faa438-d949-4086-bb2e-bef840025628",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.960Z",
+    "updated_at": "2026-10-22T09:57:06.960Z",
+    "name": "Xcode",
+    "slug": "xcode",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "099330ac-7dd3-460a-9fc9-15dc627fe38d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.001Z",
+    "updated_at": "2026-10-22T09:57:07.001Z",
+    "name": "PHP",
+    "slug": "php",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "15509c73-42cd-4a5b-b714-3758ee2d9c38",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.914Z",
+    "updated_at": "2026-10-22T09:57:06.914Z",
+    "name": "AWS ECR",
+    "slug": "aws-ecr",
+    "category": "cloud",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "260dc909-2e6d-4c99-a7dc-3c9e297dd784",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.905Z",
+    "updated_at": "2026-10-22T09:57:06.905Z",
+    "name": "SwiftUI",
+    "slug": "swiftui",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "295b7013-a3b3-44f3-9131-65ab1422dbb1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.978Z",
+    "updated_at": "2026-10-22T09:57:06.978Z",
+    "name": "UIKit",
+    "slug": "uikit",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "2eb9ce37-d89d-439b-a3bc-482824dd83be",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.935Z",
+    "updated_at": "2026-10-22T09:57:06.935Z",
+    "name": "Text-to-Speech",
+    "slug": "text-to-speech",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "31d5431f-6f7b-4eb7-9b70-e0516c60707a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.915Z",
+    "updated_at": "2026-10-22T09:57:06.915Z",
+    "name": "GitLab",
+    "slug": "gitlab",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "376f3bf6-1287-4e1b-82ba-cd2c35f692f9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.956Z",
+    "updated_at": "2026-10-22T09:57:06.956Z",
+    "name": "RxSwift",
+    "slug": "rxswift",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "3826c8ed-ddb1-4885-a835-2ea5220b119f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.991Z",
+    "updated_at": "2026-10-22T09:57:06.991Z",
+    "name": "Redis",
+    "slug": "redis",
+    "category": "database",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "3e83d12f-0ba7-4cc0-83a4-acd13719e9a2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.932Z",
+    "updated_at": "2026-10-22T09:57:06.932Z",
+    "name": "ExpressJS",
+    "slug": "expressjs",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "3fc07236-b223-489e-9cc0-a10458fbcbda",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.934Z",
+    "updated_at": "2026-10-22T09:57:06.934Z",
+    "name": "Wear OS",
+    "slug": "wear-os",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "41caf381-67db-4237-ace5-294fc2eb87e7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.913Z",
+    "updated_at": "2026-10-22T09:57:06.913Z",
+    "name": "Docker",
+    "slug": "docker",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "425838ab-6b0d-4c00-a7fc-fc502b6fc778",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.925Z",
+    "updated_at": "2026-10-22T09:57:06.925Z",
+    "name": "ReactJS",
+    "slug": "reactjs",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "482e83aa-37e5-4dba-8485-d32ac47fa818",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.003Z",
+    "updated_at": "2026-10-22T09:57:07.003Z",
+    "name": "HTML",
+    "slug": "html",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "4d6694d9-dc42-45a4-a4c0-b2a7aa3fb23b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.924Z",
+    "updated_at": "2026-10-22T09:57:06.924Z",
+    "name": "AVFoundation",
+    "slug": "avfoundation",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.951Z",
+    "updated_at": "2026-10-22T09:57:06.951Z",
+    "name": "Swift",
+    "slug": "swift",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.926Z",
+    "updated_at": "2026-10-22T09:57:06.926Z",
+    "name": "Vue.js",
+    "slug": "vuejs",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "57b90d45-0fe7-4b33-8b09-cb75452cb21c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.004Z",
+    "updated_at": "2026-10-22T09:57:07.004Z",
+    "name": "SASS",
+    "slug": "sass",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "63fc4361-44ab-430c-9d3d-4ebaaa85aef1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.988Z",
+    "updated_at": "2026-10-22T09:57:06.988Z",
+    "name": "Swagger",
+    "slug": "swagger",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "68dbcbe0-c388-4385-b249-bb84182f0d7c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.945Z",
+    "updated_at": "2026-10-22T09:57:06.945Z",
+    "name": "Dagger",
+    "slug": "dagger",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "722659e8-3557-4a70-90bf-560aeb46f064",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.912Z",
+    "updated_at": "2026-10-22T09:57:06.912Z",
+    "name": "iOS",
+    "slug": "ios",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "86b62907-984b-4710-ad89-8072489a2145",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.908Z",
+    "updated_at": "2026-10-22T09:57:06.908Z",
+    "name": "Kotlin",
+    "slug": "kotlin",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "8716b885-7f8e-4ef6-b2a4-f933eceaa427",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.959Z",
+    "updated_at": "2026-10-22T09:57:06.959Z",
+    "name": "Firebase Crashlytics",
+    "slug": "firebase-crashlytics",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "8b669e15-3ce2-46b2-830c-ef5d9594ea82",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.940Z",
+    "updated_at": "2026-10-22T09:57:06.940Z",
+    "name": "Retrofit",
+    "slug": "retrofit",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "8d51b3a4-5ec4-4368-8cd1-0bab70f0575e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.942Z",
+    "updated_at": "2026-10-22T09:57:06.942Z",
+    "name": "DatagramSocket",
+    "slug": "datagramsocket",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "8ee170a3-c61c-4d13-a33b-333aa08c8138",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.985Z",
+    "updated_at": "2026-10-22T09:57:06.985Z",
+    "name": "ASP.NET",
+    "slug": "aspnet",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "91064617-fdea-4846-9a69-18fcb28a478e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.998Z",
+    "updated_at": "2026-10-22T09:57:06.998Z",
+    "name": "SQL",
+    "slug": "sql",
+    "category": "database",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.910Z",
+    "updated_at": "2026-10-22T09:57:06.910Z",
+    "name": "Android",
+    "slug": "android",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "9c5c2b39-87a3-4945-8c3e-acb47841fe46",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.921Z",
+    "updated_at": "2026-10-22T09:57:06.921Z",
+    "name": "WKWebView",
+    "slug": "wkwebview",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "a18fea93-1a44-4ed4-b359-079af259db32",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.986Z",
+    "updated_at": "2026-10-22T09:57:06.986Z",
+    "name": "MySQL",
+    "slug": "mysql",
+    "category": "database",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.920Z",
+    "updated_at": "2026-10-22T09:57:06.920Z",
+    "name": "Jetpack Compose",
+    "slug": "jetpack-compose",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "bceb1a57-0ee9-4733-8d2f-4aefd030bb9d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.939Z",
+    "updated_at": "2026-10-22T09:57:06.939Z",
+    "name": "Hilt",
+    "slug": "hilt",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.955Z",
+    "updated_at": "2026-10-22T09:57:06.955Z",
+    "name": "Objective-C",
+    "slug": "objective-c",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.922Z",
+    "updated_at": "2026-10-22T09:57:06.922Z",
+    "name": "JavaScript",
+    "slug": "javascript",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.931Z",
+    "updated_at": "2026-10-22T09:57:06.931Z",
+    "name": "WebSocket",
+    "slug": "websocket",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "d63df047-5289-47eb-8770-3e73ee801458",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.957Z",
+    "updated_at": "2026-10-22T09:57:06.957Z",
+    "name": "Laravel",
+    "slug": "laravel",
+    "category": "framework",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.909Z",
+    "updated_at": "2026-10-22T09:57:06.909Z",
+    "name": "Java",
+    "slug": "java",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "daf55473-8288-47ca-b531-1c4b8ec93c76",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.983Z",
+    "updated_at": "2026-10-22T09:57:06.983Z",
+    "name": "C#",
+    "slug": "c",
+    "category": "language",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "dfa2ed53-e3ef-44ce-bfb4-3a4280b34aee",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.961Z",
+    "updated_at": "2026-10-22T09:57:06.961Z",
+    "name": "Android Studio",
+    "slug": "android-studio",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skill",
+  "pk": "edcbe9e8-d49b-4907-a5cb-f14093b6b99e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.989Z",
+    "updated_at": "2026-10-22T09:57:06.989Z",
+    "name": "IIS",
+    "slug": "iis",
+    "category": "tool",
+    "duration_months": null,
+    "is_featured": false,
+    "order": 0
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "0e496b6b-fc73-4075-ae19-fd1f8af4b4d3",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.924Z",
+    "updated_at": "2026-10-22T09:57:06.924Z",
+    "skill": "4d6694d9-dc42-45a4-a4c0-b2a7aa3fb23b",
+    "language_code": "en",
+    "display_name": "AVFoundation",
+    "description": "Apple framework for media capture and playback."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "143d512a-acac-4ea5-b5e0-cf1a15f0e7a8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.940Z",
+    "updated_at": "2026-10-22T09:57:06.940Z",
+    "skill": "bceb1a57-0ee9-4733-8d2f-4aefd030bb9d",
+    "language_code": "en",
+    "display_name": "Hilt",
+    "description": "Dependency injection framework for Android apps."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "14e4ed32-438d-4bab-a224-e0d73e3715a0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.923Z",
+    "updated_at": "2026-10-22T09:57:06.923Z",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "language_code": "en",
+    "display_name": "JavaScript",
+    "description": "Client-side and cross-platform scripting language."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "1a1c1441-da20-4338-b5e7-f3094ba1db9f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.911Z",
+    "updated_at": "2026-10-22T09:57:06.911Z",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "language_code": "en",
+    "display_name": "Android",
+    "description": "Android platform and ecosystem for mobile app development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "1c2535eb-fe81-4f8c-aa6c-19c4c9c9c5b7",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.936Z",
+    "updated_at": "2026-10-22T09:57:06.936Z",
+    "skill": "2eb9ce37-d89d-439b-a3bc-482824dd83be",
+    "language_code": "en",
+    "display_name": "Text-to-Speech",
+    "description": "Speech synthesis support for accessibility and UX flows."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "2011cdb2-01e8-4615-98f2-563871e2c90e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.915Z",
+    "updated_at": "2026-10-22T09:57:06.915Z",
+    "skill": "15509c73-42cd-4a5b-b714-3758ee2d9c38",
+    "language_code": "en",
+    "display_name": "AWS ECR",
+    "description": "Amazon Elastic Container Registry for image storage."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "220da165-daa3-4b45-8f13-941aa9ff9ad5",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.908Z",
+    "updated_at": "2026-10-22T09:57:06.908Z",
+    "skill": "86b62907-984b-4710-ad89-8072489a2145",
+    "language_code": "en",
+    "display_name": "Kotlin",
+    "description": "Modern JVM language used for Android development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "2af1c12a-2985-48cd-9ae7-0226e464434b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.958Z",
+    "updated_at": "2026-10-22T09:57:06.958Z",
+    "skill": "d63df047-5289-47eb-8770-3e73ee801458",
+    "language_code": "en",
+    "display_name": "Laravel",
+    "description": "PHP web framework used for API and MVC application work."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "32fcfe93-83a2-44b4-9e28-e4bf920671b0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.942Z",
+    "updated_at": "2026-10-22T09:57:06.942Z",
+    "skill": "8d51b3a4-5ec4-4368-8cd1-0bab70f0575e",
+    "language_code": "en",
+    "display_name": "DatagramSocket",
+    "description": "Low-level network socket communication for device control."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "33e7181f-1495-4a46-9395-43c832a6069b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.955Z",
+    "updated_at": "2026-10-22T09:57:06.955Z",
+    "skill": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+    "language_code": "en",
+    "display_name": "Objective-C",
+    "description": "C-based language historically used in Apple ecosystem development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "355288ae-46c5-4497-a367-f9eca3b21bc5",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.910Z",
+    "updated_at": "2026-10-22T09:57:06.910Z",
+    "skill": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+    "language_code": "en",
+    "display_name": "Java",
+    "description": "General-purpose JVM language used in Android and backend service work."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "4d0bba16-7463-4e9c-959d-70f89b1b7f6d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.987Z",
+    "updated_at": "2026-10-22T09:57:06.987Z",
+    "skill": "a18fea93-1a44-4ed4-b359-079af259db32",
+    "language_code": "en",
+    "display_name": "MySQL",
+    "description": "Relational database used in backend and business systems."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "5aefb017-7d4b-4205-a34c-64cceace1cc9",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.961Z",
+    "updated_at": "2026-10-22T09:57:06.961Z",
+    "skill": "dfa2ed53-e3ef-44ce-bfb4-3a4280b34aee",
+    "language_code": "en",
+    "display_name": "Android Studio",
+    "description": "Official Android IDE for mobile app development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "68392518-dbe8-4587-8afd-f7d5517fa2ae",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.934Z",
+    "updated_at": "2026-10-22T09:57:06.934Z",
+    "skill": "3fc07236-b223-489e-9cc0-a10458fbcbda",
+    "language_code": "en",
+    "display_name": "Wear OS",
+    "description": "Google wearable platform for connected device apps."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "68f791ee-8545-4609-8587-9c2d40ef0aca",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.989Z",
+    "updated_at": "2026-10-22T09:57:06.989Z",
+    "skill": "63fc4361-44ab-430c-9d3d-4ebaaa85aef1",
+    "language_code": "en",
+    "display_name": "Swagger",
+    "description": "API documentation and contract tooling."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "6e1f5393-a6dc-4a31-843c-d0c498ca723a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.926Z",
+    "updated_at": "2026-10-22T09:57:06.926Z",
+    "skill": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+    "language_code": "en",
+    "display_name": "VueJS",
+    "description": "Progressive frontend framework for UI composition."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "73005999-5a88-4923-ac47-55087da16514",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.925Z",
+    "updated_at": "2026-10-22T09:57:06.925Z",
+    "skill": "425838ab-6b0d-4c00-a7fc-fc502b6fc778",
+    "language_code": "en",
+    "display_name": "ReactJS",
+    "description": "Component-based frontend library."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "7db8126a-c3f9-478e-a770-818a698769ed",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.983Z",
+    "updated_at": "2026-10-22T09:57:06.983Z",
+    "skill": "daf55473-8288-47ca-b531-1c4b8ec93c76",
+    "language_code": "en",
+    "display_name": "C#",
+    "description": "Main .NET language used for web and API work."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "7ed284c2-7736-4589-9bf1-133aa82045c2",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.931Z",
+    "updated_at": "2026-10-22T09:57:06.931Z",
+    "skill": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+    "language_code": "en",
+    "display_name": "WebSocket",
+    "description": "Real-time communication protocol for interactive features."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "8497ea21-e1bc-439c-ab23-3d26e4ae2685",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.991Z",
+    "updated_at": "2026-10-22T09:57:06.991Z",
+    "skill": "3826c8ed-ddb1-4885-a835-2ea5220b119f",
+    "language_code": "en",
+    "display_name": "Redis",
+    "description": "In-memory key-value store used for application data caching and status checks."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "85c278fc-26dc-4078-ad0a-99196ad5b248",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.912Z",
+    "updated_at": "2026-10-22T09:57:06.912Z",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "language_code": "en",
+    "display_name": "iOS",
+    "description": "Apple mobile platform for iPhone and iPad development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "87db2690-70e3-4a9b-ad09-d4fb8076995e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.959Z",
+    "updated_at": "2026-10-22T09:57:06.959Z",
+    "skill": "8716b885-7f8e-4ef6-b2a4-f933eceaa427",
+    "language_code": "en",
+    "display_name": "Firebase Crashlytics",
+    "description": "Crash reporting and analytics for mobile app stability tracking."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "89f966f8-ec29-4579-9df9-cd1c55c4b786",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.922Z",
+    "updated_at": "2026-10-22T09:57:06.922Z",
+    "skill": "9c5c2b39-87a3-4945-8c3e-acb47841fe46",
+    "language_code": "en",
+    "display_name": "WKWebView",
+    "description": "WebView component for embedding web content in iOS apps."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "9627ed39-0414-4032-afe8-ba40f5f9e90a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.932Z",
+    "updated_at": "2026-10-22T09:57:06.932Z",
+    "skill": "3e83d12f-0ba7-4cc0-83a4-acd13719e9a2",
+    "language_code": "en",
+    "display_name": "ExpressJS",
+    "description": "Minimal Node.js web application framework."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "a0fbcb3b-6a72-4c43-8115-28437603f7da",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.914Z",
+    "updated_at": "2026-10-22T09:57:06.914Z",
+    "skill": "41caf381-67db-4237-ace5-294fc2eb87e7",
+    "language_code": "en",
+    "display_name": "Docker",
+    "description": "Container toolkit used for builds and deployment support."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "b111a5e1-f76a-4bb7-9ffa-0745d2cb5061",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.946Z",
+    "updated_at": "2026-10-22T09:57:06.946Z",
+    "skill": "68dbcbe0-c388-4385-b249-bb84182f0d7c",
+    "language_code": "en",
+    "display_name": "Dagger",
+    "description": "Dependency injection library used in Android apps."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "b844642b-8554-4430-8d2b-04800559039a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.998Z",
+    "updated_at": "2026-10-22T09:57:06.998Z",
+    "skill": "91064617-fdea-4846-9a69-18fcb28a478e",
+    "language_code": "en",
+    "display_name": "SQL",
+    "description": "Structured query language for relational data operations."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "b8c9ef89-2349-4cc5-aeb4-94e2fd1c115c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.004Z",
+    "updated_at": "2026-10-22T09:57:07.004Z",
+    "skill": "57b90d45-0fe7-4b33-8b09-cb75452cb21c",
+    "language_code": "en",
+    "display_name": "SASS",
+    "description": "CSS preprocessor for maintainable styling."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "c38a8a7a-29fd-4060-9dbd-ef0a8bacf7a8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.952Z",
+    "updated_at": "2026-10-22T09:57:06.952Z",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "language_code": "en",
+    "display_name": "Swift",
+    "description": "Apple’s primary programming language for iOS and macOS."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "c922f01c-5194-4649-89a0-4df8beb92b9b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.956Z",
+    "updated_at": "2026-10-22T09:57:06.956Z",
+    "skill": "376f3bf6-1287-4e1b-82ba-cd2c35f692f9",
+    "language_code": "en",
+    "display_name": "RxSwift",
+    "description": "Reactive programming framework for Swift."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "d0df103b-6502-4308-8b94-5891cc5d3920",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.960Z",
+    "updated_at": "2026-10-22T09:57:06.960Z",
+    "skill": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+    "language_code": "en",
+    "display_name": "Xcode",
+    "description": "Apple IDE for iOS and macOS development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "d1bb3b5c-18fc-4e40-8c30-0585dac5df20",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.979Z",
+    "updated_at": "2026-10-22T09:57:06.979Z",
+    "skill": "295b7013-a3b3-44f3-9131-65ab1422dbb1",
+    "language_code": "en",
+    "display_name": "UIKit",
+    "description": "Apple UI framework for native iOS interface development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "d3b87d4b-d262-4796-b258-59e2e08e249f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.003Z",
+    "updated_at": "2026-10-22T09:57:07.003Z",
+    "skill": "482e83aa-37e5-4dba-8485-d32ac47fa818",
+    "language_code": "en",
+    "display_name": "HTML",
+    "description": "Markup language for structured web content."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "d836456e-f676-411b-b76c-37c5b5de53c0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.990Z",
+    "updated_at": "2026-10-22T09:57:06.990Z",
+    "skill": "edcbe9e8-d49b-4907-a5cb-f14093b6b99e",
+    "language_code": "en",
+    "display_name": "IIS",
+    "description": "Microsoft IIS web server for Windows hosting."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "dfa8628c-c4f8-4090-a093-3c807ce4cec1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.906Z",
+    "updated_at": "2026-10-22T09:57:06.906Z",
+    "skill": "260dc909-2e6d-4c99-a7dc-3c9e297dd784",
+    "language_code": "en",
+    "display_name": "SwiftUI",
+    "description": "Apple UI framework for declarative Swift interfaces."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "e87f2865-84e4-4c4c-9534-d30fcae52e0b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.920Z",
+    "updated_at": "2026-10-22T09:57:06.920Z",
+    "skill": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+    "language_code": "en",
+    "display_name": "Jetpack Compose",
+    "description": "Modern Android UI toolkit for declarative UI development."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "ecf35408-5533-4e21-8447-6dbb49576240",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.941Z",
+    "updated_at": "2026-10-22T09:57:06.941Z",
+    "skill": "8b669e15-3ce2-46b2-830c-ef5d9594ea82",
+    "language_code": "en",
+    "display_name": "Retrofit",
+    "description": "HTTP client library for Android and API integration."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "ef50b27d-28f6-4d0c-8b3d-e76384707e5a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.001Z",
+    "updated_at": "2026-10-22T09:57:07.001Z",
+    "skill": "099330ac-7dd3-460a-9fc9-15dc627fe38d",
+    "language_code": "en",
+    "display_name": "PHP",
+    "description": "Server-side scripting language used for web work."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "f4ca3544-43e0-4028-b56d-49b636bf8e30",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.916Z",
+    "updated_at": "2026-10-22T09:57:06.916Z",
+    "skill": "31d5431f-6f7b-4eb7-9b70-e0516c60707a",
+    "language_code": "en",
+    "display_name": "GitLab",
+    "description": "Git-based source control and project management platform."
+  }
+},
+{
+  "model": "skills.skilltranslation",
+  "pk": "f8fbdda4-a58f-4d39-a98a-4b3918be9b2f",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.985Z",
+    "updated_at": "2026-10-22T09:57:06.985Z",
+    "skill": "8ee170a3-c61c-4d13-a33b-333aa08c8138",
+    "language_code": "en",
+    "display_name": "ASP.NET",
+    "description": "Web framework for ASP.NET MVC and REST API work."
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "034c3ba0-ec0f-4487-a829-bd344307d94a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.941Z",
+    "updated_at": "2026-10-22T09:57:06.941Z",
+    "skill": "8b669e15-3ce2-46b2-830c-ef5d9594ea82",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Retrofit",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "04af4b1e-7182-4cb6-a6f5-98ad45e07444",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.005Z",
+    "updated_at": "2026-10-22T09:57:07.005Z",
+    "skill": "57b90d45-0fe7-4b33-8b09-cb75452cb21c",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "SASS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "04f4ee75-8d48-4ae6-8b04-8e406572164e",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.922Z",
+    "updated_at": "2026-10-22T09:57:06.922Z",
+    "skill": "9c5c2b39-87a3-4945-8c3e-acb47841fe46",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "WKWebView",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "04f79c1c-03f2-4efb-a6f2-1732c8c1565d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.940Z",
+    "updated_at": "2026-10-22T09:57:06.940Z",
+    "skill": "bceb1a57-0ee9-4733-8d2f-4aefd030bb9d",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Hilt",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "07012038-6537-488b-b3ea-d1127105587b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.991Z",
+    "updated_at": "2026-10-22T09:57:06.991Z",
+    "skill": "3826c8ed-ddb1-4885-a835-2ea5220b119f",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Redis",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "084fb8de-2a2e-484a-a3ae-d88fdd8d5070",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.957Z",
+    "updated_at": "2026-10-22T09:57:06.957Z",
+    "skill": "376f3bf6-1287-4e1b-82ba-cd2c35f692f9",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "RxSwift",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "0905dd26-6cc2-4627-baaa-2f2d0cd3af13",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.924Z",
+    "updated_at": "2026-10-22T09:57:06.924Z",
+    "skill": "4d6694d9-dc42-45a4-a4c0-b2a7aa3fb23b",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "AVFoundation",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "1ab60af7-7739-4a0d-85f5-642474da5b3b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.923Z",
+    "updated_at": "2026-10-22T09:57:06.923Z",
+    "skill": "d2a57559-541c-42df-bcd0-b8a0c7895f5a",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "JavaScript",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "210f1ba6-7878-4bef-987f-ccd554e6f01d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.999Z",
+    "updated_at": "2026-10-22T09:57:06.999Z",
+    "skill": "91064617-fdea-4846-9a69-18fcb28a478e",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "SQL",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "2c852d11-e40c-44c7-8353-64130eaed1c3",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.907Z",
+    "updated_at": "2026-10-22T09:57:06.907Z",
+    "skill": "260dc909-2e6d-4c99-a7dc-3c9e297dd784",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "SwiftUI",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "31ece811-efa4-45f5-aeea-6f2f6a840e94",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.959Z",
+    "updated_at": "2026-10-22T09:57:06.959Z",
+    "skill": "8716b885-7f8e-4ef6-b2a4-f933eceaa427",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Firebase Crashlytics",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "3db66b8c-2075-4d44-be7c-b99468f28f89",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.989Z",
+    "updated_at": "2026-10-22T09:57:06.989Z",
+    "skill": "63fc4361-44ab-430c-9d3d-4ebaaa85aef1",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Swagger",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "42be57dd-42cf-436d-97b2-9b3a53487e4a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.962Z",
+    "updated_at": "2026-10-22T09:57:06.962Z",
+    "skill": "dfa2ed53-e3ef-44ce-bfb4-3a4280b34aee",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Android Studio",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "44989503-231b-4b0e-b381-b28008579c87",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.914Z",
+    "updated_at": "2026-10-22T09:57:06.914Z",
+    "skill": "41caf381-67db-4237-ace5-294fc2eb87e7",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Docker",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "466f8210-48a6-40ba-900b-c39f9ea4e5fc",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.925Z",
+    "updated_at": "2026-10-22T09:57:06.925Z",
+    "skill": "425838ab-6b0d-4c00-a7fc-fc502b6fc778",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "ReactJS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "478b127f-ffd3-4711-b310-10a5be64b9b1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.911Z",
+    "updated_at": "2026-10-22T09:57:06.911Z",
+    "skill": "97559cc5-dea8-4970-8ce5-d17a6fce4a05",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Android",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "48ee5c41-51e2-41e8-96cd-86cbed1ba3b0",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.001Z",
+    "updated_at": "2026-10-22T09:57:07.001Z",
+    "skill": "099330ac-7dd3-460a-9fc9-15dc627fe38d",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "PHP",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "5a57aff6-0a6a-4b71-b12e-58234d1b949a",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.921Z",
+    "updated_at": "2026-10-22T09:57:06.921Z",
+    "skill": "a1c5047e-9c13-46aa-b166-f485f5b4c635",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Jetpack Compose",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "5b9b484c-6108-4085-8c31-4d25f37af1f5",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.926Z",
+    "updated_at": "2026-10-22T09:57:06.926Z",
+    "skill": "52a7acf5-2bcd-449b-9651-0d0cea8ae2a2",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "VueJS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "5f29983a-f641-46ea-ac30-8ed5ba12efb6",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.987Z",
+    "updated_at": "2026-10-22T09:57:06.987Z",
+    "skill": "a18fea93-1a44-4ed4-b359-079af259db32",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "MySQL",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "622bf51a-b3dd-4d69-b578-6fb336ca68e4",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.932Z",
+    "updated_at": "2026-10-22T09:57:06.932Z",
+    "skill": "d4e4df82-261c-454d-aba7-f576b6cd7d90",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "WebSocket",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "68933c57-fe93-4cce-afe0-9d7b27805cc8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.910Z",
+    "updated_at": "2026-10-22T09:57:06.910Z",
+    "skill": "d8a81223-4ba6-41ce-b219-48f7c68be9b2",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Java",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "6c9ceed3-c8ae-4dac-a03f-f39351d05fdc",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.986Z",
+    "updated_at": "2026-10-22T09:57:06.986Z",
+    "skill": "8ee170a3-c61c-4d13-a33b-333aa08c8138",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "ASP.NET",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "6f14068f-d33c-482e-8c14-9995752c8601",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.990Z",
+    "updated_at": "2026-10-22T09:57:06.990Z",
+    "skill": "edcbe9e8-d49b-4907-a5cb-f14093b6b99e",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "IIS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "72d7f2b6-0cad-4ac9-a3a5-1ab56da7a76d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.960Z",
+    "updated_at": "2026-10-22T09:57:06.960Z",
+    "skill": "02251701-dfa6-4765-8fa5-cbcdf980e358",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Xcode",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "76c41607-a6f8-4f6c-8f8a-421b392b782d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.946Z",
+    "updated_at": "2026-10-22T09:57:06.946Z",
+    "skill": "68dbcbe0-c388-4385-b249-bb84182f0d7c",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Dagger",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "97d589fe-c3c1-457a-aef7-9ec5f8a8fb1d",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.952Z",
+    "updated_at": "2026-10-22T09:57:06.952Z",
+    "skill": "4e953f12-791a-4fd1-8a8d-dbda634ddf44",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Swift",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "9c3f2b8d-7348-47f7-8dc0-970d513debf1",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.943Z",
+    "updated_at": "2026-10-22T09:57:06.943Z",
+    "skill": "8d51b3a4-5ec4-4368-8cd1-0bab70f0575e",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "DatagramSocket",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "9faafb71-04bf-4413-81b0-5c87e763c536",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.933Z",
+    "updated_at": "2026-10-22T09:57:06.933Z",
+    "skill": "3e83d12f-0ba7-4cc0-83a4-acd13719e9a2",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "ExpressJS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "aacb8c0d-ca45-4b29-9e3f-6fdb32836f31",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.913Z",
+    "updated_at": "2026-10-22T09:57:06.913Z",
+    "skill": "722659e8-3557-4a70-90bf-560aeb46f064",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "iOS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "b0d797dc-9325-4384-b274-aab3ca2252db",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.915Z",
+    "updated_at": "2026-10-22T09:57:06.915Z",
+    "skill": "15509c73-42cd-4a5b-b714-3758ee2d9c38",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "AWS ECR",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "b34a3bc4-0fb8-44e0-a767-aa862675e4a8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.916Z",
+    "updated_at": "2026-10-22T09:57:06.916Z",
+    "skill": "31d5431f-6f7b-4eb7-9b70-e0516c60707a",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "GitLab",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "b352a881-223a-4608-86ce-d12a60e2c90b",
+  "fields": {
+    "created_at": "2026-10-22T09:57:07.004Z",
+    "updated_at": "2026-10-22T09:57:07.004Z",
+    "skill": "482e83aa-37e5-4dba-8485-d32ac47fa818",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "HTML",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "c4eb167e-1ede-4aa8-95e4-c6c9c0244efb",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.983Z",
+    "updated_at": "2026-10-22T09:57:06.983Z",
+    "skill": "daf55473-8288-47ca-b531-1c4b8ec93c76",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "C#",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "c7fbbc0a-b747-4dc4-b94b-5462fba8f6da",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.936Z",
+    "updated_at": "2026-10-22T09:57:06.936Z",
+    "skill": "2eb9ce37-d89d-439b-a3bc-482824dd83be",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Text-to-Speech",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "d7513364-30b9-4637-9327-f606340c7b2c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.956Z",
+    "updated_at": "2026-10-22T09:57:06.956Z",
+    "skill": "cb031ad8-06d5-4ac3-b8f4-989f04f3e62e",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Objective-C",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "dc642d6f-bd24-4db3-8b48-474e67b153f8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.958Z",
+    "updated_at": "2026-10-22T09:57:06.958Z",
+    "skill": "d63df047-5289-47eb-8770-3e73ee801458",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Laravel",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "e50a7d29-7a65-4741-99f5-991d1c867505",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.935Z",
+    "updated_at": "2026-10-22T09:57:06.935Z",
+    "skill": "3fc07236-b223-489e-9cc0-a10458fbcbda",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Wear OS",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "ed3d0ec1-230f-4aae-945e-71637a6f06a8",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.979Z",
+    "updated_at": "2026-10-22T09:57:06.979Z",
+    "skill": "295b7013-a3b3-44f3-9131-65ab1422dbb1",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "UIKit",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "skills.skillsourceclaim",
+  "pk": "fb5005b7-af8d-449e-81a6-c8aa2230225c",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.909Z",
+    "updated_at": "2026-10-22T09:57:06.909Z",
+    "skill": "86b62907-984b-4710-ad89-8072489a2145",
+    "source_language": "en",
+    "source_document": "Vincent_Shen_CV_202610.docx",
+    "original_name": "Kotlin",
+    "original_duration_text": "",
+    "notes": "Imported from the English CV and retained for later review.",
+    "review_status": "pending"
+  }
+},
+{
+  "model": "private_data.privateprofile",
+  "pk": "01eb808f-2767-4f22-95b9-9b58487c6b24",
+  "fields": {
+    "created_at": "2026-10-22T09:57:06.883Z",
+    "updated_at": "2026-10-22T09:57:06.883Z",
+    "profile": "29566b8b-8172-49ce-826c-2de0a66d929d",
+    "address": "〒215-0003 Kanagawa, Yokohama City, Kanagawa Ward, Rokkakubashi 1-18-17\nHakuraku, Toyoko Line",
+    "phone_number": "+81 (090) 6500-9687",
+    "citizenship": "Chinese",
+    "visa_type": "ESI",
+    "visa_expiry_date": "2027-10-10"
+  }
+}
+]
