@@ -1,29 +1,67 @@
-export default function HomePage() {
+import Portfolio from "./portfolio";
+import { apiGet } from "@/lib/api";
+import type {
+  ExperienceResponse,
+  LanguageCode,
+  ProfileResponse,
+  SkillResponse,
+} from "@/types/api";
+import { isLanguageCode } from "@/lib/i18n";
+
+type SearchParams = Promise<{
+  lang?: string;
+  section?: string;
+}>;
+
+type ListResponse<T> = T[] | { results: T[] };
+
+interface LoadedList<T> {
+  items: T[];
+  failed: boolean;
+}
+
+async function loadList<T>(path: string, lang: LanguageCode): Promise<LoadedList<T>> {
+  try {
+    const response = await apiGet<ListResponse<T>>(path, lang);
+    return {
+      items: Array.isArray(response) ? response : response.results,
+      failed: false,
+    };
+  } catch {
+    return { items: [], failed: true };
+  }
+}
+
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}) {
+  const params = await searchParams;
+  const locale = isLanguageCode(params.lang) ? params.lang : "en";
+  const activeSection =
+    params.section === "experiences" || params.section === "skills"
+      ? params.section
+      : "profile";
+
+  const [profile, experiences, skills] = await Promise.all([
+    loadList<ProfileResponse>("profile/", locale),
+    loadList<ExperienceResponse>("experiences/", locale),
+    loadList<SkillResponse>("skills/", locale),
+  ]);
+
   return (
-    <main className="container">
-      <p className="eyebrow">Bilingual developer portfolio</p>
-      <h1>Portfolio starter</h1>
-      <p>
-        This starter is ready for GitHub Copilot to implement the Profile,
-        Experiences, and Skills tabs.
-      </p>
-      <nav aria-label="Main sections">
-        <a href="#profile">Profile</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#skills">Skills</a>
-      </nav>
-      <section id="profile">
-        <h2>Profile</h2>
-        <p>Profile content will be loaded from the Django API.</p>
-      </section>
-      <section id="experiences">
-        <h2>Experiences</h2>
-        <p>Employment periods and nested projects will appear here.</p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <p>Canonical technical skills will appear here.</p>
-      </section>
-    </main>
+    <Portfolio
+      locale={locale}
+      activeSection={activeSection}
+      profile={profile.items[0] ?? null}
+      experiences={experiences.items}
+      skills={skills.items}
+      failed={{
+        profile: profile.failed,
+        experiences: experiences.failed,
+        skills: skills.failed,
+      }}
+    />
   );
 }
