@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
-const ADMIN_SESSION_KEY = "portfolio-admin-session";
+import { getAdminSessionStatus, logoutAdmin } from "@/lib/admin-api";
 
 const navItems = [
   { href: "/admin", label: "Dashboard" },
@@ -19,16 +19,22 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const isAuthenticated =
-      typeof window !== "undefined" &&
-      window.localStorage.getItem(ADMIN_SESSION_KEY) === "active";
+    const checkAuth = async () => {
+      try {
+        const session = await getAdminSessionStatus();
+        if (!session.authenticated) {
+          router.replace("/admin/login");
+          return;
+        }
+      } catch {
+        router.replace("/admin/login");
+        return;
+      }
 
-    if (!isAuthenticated) {
-      router.replace("/admin/login");
-      return;
-    }
+      setIsReady(true);
+    };
 
-    setIsReady(true);
+    void checkAuth();
   }, [router]);
 
   const activePath = useMemo(() => {
@@ -36,10 +42,13 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
     return pathname;
   }, [pathname]);
 
-  const signOut = () => {
-    if (typeof window !== "undefined") {
-      window.localStorage.removeItem(ADMIN_SESSION_KEY);
+  const signOut = async () => {
+    try {
+      await logoutAdmin();
+    } catch {
+      // ignore logout errors and redirect to the login screen
     }
+
     router.replace("/admin/login");
   };
 
@@ -107,7 +116,7 @@ export function AdminShell({ children }: { children: React.ReactNode }) {
 
         <button
           type="button"
-          onClick={signOut}
+          onClick={() => void signOut()}
           style={{
             marginTop: 28,
             width: "100%",

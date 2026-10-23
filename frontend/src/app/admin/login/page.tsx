@@ -3,24 +3,34 @@
 import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useState } from "react";
 
-const ADMIN_SESSION_KEY = "portfolio-admin-session";
+import { getAdminSessionStatus, loginAdmin } from "@/lib/admin-api";
 
 export default function AdminLoginPage() {
   const router = useRouter();
   const [error, setError] = useState("");
   const [username, setUsername] = useState("admin");
   const [password, setPassword] = useState("");
+  const [isChecking, setIsChecking] = useState(true);
 
   useEffect(() => {
-    if (
-      typeof window !== "undefined" &&
-      window.localStorage.getItem(ADMIN_SESSION_KEY) === "active"
-    ) {
-      router.replace("/admin");
-    }
+    const checkSession = async () => {
+      try {
+        const status = await getAdminSessionStatus();
+        if (status.authenticated) {
+          router.replace("/admin");
+          return;
+        }
+      } catch {
+        // allow user to sign in manually
+      } finally {
+        setIsChecking(false);
+      }
+    };
+
+    void checkSession();
   }, [router]);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     if (!username.trim() || !password.trim()) {
@@ -28,11 +38,17 @@ export default function AdminLoginPage() {
       return;
     }
 
-    if (typeof window !== "undefined") {
-      window.localStorage.setItem(ADMIN_SESSION_KEY, "active");
-    }
+    try {
+      const status = await loginAdmin(username, password);
+      if (!status.authenticated) {
+        setError("Your account is not authorized for admin access.");
+        return;
+      }
 
-    router.replace("/admin");
+      router.replace("/admin");
+    } catch (loginError) {
+      setError(loginError instanceof Error ? loginError.message : "Unable to sign in.");
+    }
   };
 
   return (
@@ -102,6 +118,7 @@ export default function AdminLoginPage() {
 
           <button
             type="submit"
+            disabled={isChecking}
             style={{
               padding: "12px 16px",
               border: 0,
@@ -109,10 +126,11 @@ export default function AdminLoginPage() {
               background: "#2563eb",
               color: "#fff",
               fontWeight: 700,
-              cursor: "pointer",
+              cursor: isChecking ? "wait" : "pointer",
+              opacity: isChecking ? 0.65 : 1,
             }}
           >
-            Sign in
+            {isChecking ? "Checking session..." : "Sign in"}
           </button>
         </form>
       </div>

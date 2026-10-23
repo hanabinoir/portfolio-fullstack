@@ -3,6 +3,7 @@ import type {
   AdminExperienceFormData,
   AdminPrivateProfileResponse,
   AdminProfileFormData,
+  AdminSessionStatus,
   AdminSkillFormData,
   AdminMutationOutcome,
   ExperienceResponse,
@@ -16,6 +17,34 @@ const internalBaseUrl =
 
 function getBaseUrl(): string {
   return typeof window === "undefined" ? internalBaseUrl : browserBaseUrl;
+}
+
+function getCookie(name: string): string | null {
+  if (typeof document === "undefined") {
+    return null;
+  }
+
+  const value = document.cookie
+    .split("; ")
+    .find((cookie) => cookie.startsWith(`${name}=`));
+
+  return value ? decodeURIComponent(value.split("=").slice(1).join("=")) : null;
+}
+
+async function readCsrfToken(): Promise<string> {
+  const existingToken = getCookie("csrftoken");
+  if (existingToken) {
+    return existingToken;
+  }
+
+  const baseOrigin = browserBaseUrl.replace(/\/api\/v1$/, "");
+  const sessionUrl = new URL("/api/v1/auth/session/", baseOrigin);
+  await fetch(sessionUrl, {
+    credentials: "include",
+    method: "GET",
+  }).catch(() => undefined);
+
+  return getCookie("csrftoken") ?? "";
 }
 
 function toErrorPayload(response: Response): Promise<AdminApiError> {
@@ -71,6 +100,44 @@ async function requestJson<T>(
 
     throw new Error(apiError.message);
   }
+}
+
+export async function getAdminSessionStatus(): Promise<AdminSessionStatus> {
+  return requestJson<AdminSessionStatus>(
+    "/auth/session/",
+    { method: "GET" },
+    { authenticated: false, user: null },
+  );
+}
+
+export async function loginAdmin(username: string, password: string): Promise<AdminSessionStatus> {
+  const csrfToken = await readCsrfToken();
+
+  return requestJson<AdminSessionStatus>(
+    "/auth/login/",
+    {
+      method: "POST",
+      headers: {
+        "X-CSRFToken": csrfToken,
+      },
+      body: JSON.stringify({ username, password }),
+    },
+    { authenticated: false, user: null },
+  );
+}
+
+export async function logoutAdmin(): Promise<void> {
+  const csrfToken = await readCsrfToken();
+  await requestJson<{ authenticated: boolean; user: null }>(
+    "/auth/logout/",
+    {
+      method: "POST",
+      headers: {
+        "X-CSRFToken": csrfToken,
+      },
+    },
+    { authenticated: false, user: null },
+  );
 }
 
 export const demoPrivateProfile: AdminPrivateProfileResponse = {
@@ -168,7 +235,7 @@ export async function saveAdminPrivateProfile(
 
 export async function listAdminExperiences(): Promise<ExperienceResponse[]> {
   return requestJson<ExperienceResponse[]>(
-    "/experiences/",
+    "/admin/experiences/",
     { method: "GET" },
     demoExperienceList,
   );
@@ -241,7 +308,7 @@ export async function deleteAdminExperience(id: string): Promise<boolean> {
 
 export async function listAdminSkills(): Promise<SkillResponse[]> {
   return requestJson<SkillResponse[]>(
-    "/skills/",
+    "/admin/skills/",
     { method: "GET" },
     demoSkillList,
   );

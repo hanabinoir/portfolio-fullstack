@@ -122,6 +122,19 @@ export interface AdminSkillFormData {
   order: number;
 }
 
+export interface AdminSessionUser {
+  id: number;
+  username: string;
+  email: string | null;
+  is_staff: boolean;
+  is_superuser: boolean;
+}
+
+export interface AdminSessionStatus {
+  authenticated: boolean;
+  user: AdminSessionUser | null;
+}
+
 export interface AdminApiError {
   code: string;
   message: string;

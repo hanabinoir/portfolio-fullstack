@@ -1,7 +1,10 @@
+README.md
 pyproject.toml
 apps/__init__.py
 apps/accounts/__init__.py
 apps/accounts/apps.py
+apps/accounts/urls.py
+apps/accounts/views.py
 apps/accounts/migrations/0001_create_portfolio_groups.py
 apps/accounts/migrations/__init__.py
 apps/common/models.py
@@ -64,5 +67,7 @@ portfolio_api.egg-info/SOURCES.txt
 portfolio_api.egg-info/dependency_links.txt
 portfolio_api.egg-info/requires.txt
 portfolio_api.egg-info/top_level.txt
+tests/test_admin_auth.py
 tests/test_api_public_endpoints.py
 tests/test_api_root.py
+tests/test_portfolio_seed.py
