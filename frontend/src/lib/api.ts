@@ -1,3 +1,5 @@
+import type { LanguageCode } from "@/types/api";
+
 const browserBaseUrl =
   process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 const internalBaseUrl =
@@ -7,7 +9,10 @@ const internalBaseUrl =
  * Use this helper for server-side calls from Next.js server components.
  * Never pass secrets to NEXT_PUBLIC_* variables.
  */
-export async function apiGet<T>(path: string, lang: "en" | "ja" = "en"): Promise<T> {
+export async function apiGet<T>(
+  path: string,
+  lang: LanguageCode = "en",
+): Promise<T> {
   const baseUrl = typeof window === "undefined" ? internalBaseUrl : browserBaseUrl;
   const url = new URL(`${baseUrl.replace(/\/$/, "")}/${path.replace(/^\//, "")}`);
   url.searchParams.set("lang", lang);

@@ -84,11 +84,19 @@ CORS_ALLOWED_ORIGINS = [
         "DJANGO_CORS_ALLOWED_ORIGINS", "http://localhost:3000"
     ).split(",") if origin.strip()
 ]
+CORS_ALLOW_CREDENTIALS = True
+
 CSRF_TRUSTED_ORIGINS = [
     origin.strip() for origin in os.getenv(
         "DJANGO_CSRF_TRUSTED_ORIGINS", "http://localhost:3000"
     ).split(",") if origin.strip()
 ]
+CSRF_COOKIE_SAMESITE = os.getenv("DJANGO_CSRF_COOKIE_SAMESITE", "Lax")
+CSRF_COOKIE_HTTPONLY = False
+SESSION_COOKIE_SAMESITE = os.getenv("DJANGO_SESSION_COOKIE_SAMESITE", "Lax")
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_SECURE = os.getenv("DJANGO_SESSION_COOKIE_SECURE", "0") == "1"
+CSRF_COOKIE_SECURE = os.getenv("DJANGO_CSRF_COOKIE_SECURE", "0") == "1"
 
 REST_FRAMEWORK = {
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
