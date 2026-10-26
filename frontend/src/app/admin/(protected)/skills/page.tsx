@@ -16,7 +16,7 @@ const emptySkill: AdminSkillFormData = {
   category: "language",
   display_name: "",
   description: "",
-  duration_months: 12,
+  duration_months: 0,
   is_featured: false,
   order: 1,
 };
@@ -48,7 +48,7 @@ export default function AdminSkillsPage() {
       category: item.category,
       display_name: item.display_name,
       description: item.description,
-      duration_months: item.duration_months ?? 12,
+      duration_months: item.duration_months ?? 0,
       is_featured: item.is_featured,
       order: item.order,
     });

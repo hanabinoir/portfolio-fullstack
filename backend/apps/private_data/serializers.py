@@ -1,11 +1,9 @@
 from rest_framework import serializers
 
 from apps.experiences.models import Employment, Experience, ExperienceTranslation, ExperienceURL
-from apps.experiences.serializers import ExperienceSerializer
 from apps.organizations.models import Organization
 from apps.private_data.models import PrivateProfile
 from apps.skills.models import Skill, SkillTranslation
-from apps.skills.serializers import SkillSerializer
 
 
 class PrivateProfileSerializer(serializers.ModelSerializer):

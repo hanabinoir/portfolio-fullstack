@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import {
   createAdminExperience,
   deleteAdminExperience,
-  demoExperienceList,
   listAdminExperiences,
   updateAdminExperience,
 } from "@/lib/admin-api";
