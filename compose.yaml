@@ -52,6 +52,7 @@ services:
       - frontend_next:/app/.next
     depends_on:
       - backend
+    command: sh -c "npm install --no-audit --no-fund && npm run dev -- --hostname 0.0.0.0"
 
 volumes:
   postgres_data:

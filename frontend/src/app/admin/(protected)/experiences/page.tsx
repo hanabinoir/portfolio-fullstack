@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 
 import {
   createAdminExperience,
@@ -139,20 +141,23 @@ export default function AdminExperiencesPage() {
             </label>
           </div>
 
-          <label style={{ display: "grid", gap: 8 }}>
-            <span>Overview</span>
-            <textarea rows={4} value={form.overview} onChange={(event) => handleField("overview", event.target.value)} style={{ ...inputStyle, resize: "vertical" }} />
-          </label>
+          <MarkdownField
+            label="Overview"
+            value={form.overview}
+            onChange={(value) => handleField("overview", value)}
+          />
 
-          <label style={{ display: "grid", gap: 8 }}>
-            <span>Responsibilities</span>
-            <textarea rows={4} value={form.responsibilities} onChange={(event) => handleField("responsibilities", event.target.value)} style={{ ...inputStyle, resize: "vertical" }} />
-          </label>
+          <MarkdownField
+            label="Responsibilities"
+            value={form.responsibilities}
+            onChange={(value) => handleField("responsibilities", value)}
+          />
 
-          <label style={{ display: "grid", gap: 8 }}>
-            <span>Contributions</span>
-            <textarea rows={4} value={form.contributions ?? ""} onChange={(event) => handleField("contributions", event.target.value || "")} style={{ ...inputStyle, resize: "vertical" }} />
-          </label>
+          <MarkdownField
+            label="Contributions"
+            value={form.contributions ?? ""}
+            onChange={(value) => handleField("contributions", value)}
+          />
 
           <label style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
             <input type="checkbox" checked={form.is_published} onChange={(event) => handleField("is_published", event.target.checked)} />
@@ -182,6 +187,63 @@ export default function AdminExperiencesPage() {
                 </div>
               </div>
             ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MarkdownField({
+  label,
+  value,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  onChange: (value: string) => void;
+}) {
+  const fieldId = `experience-${label.toLowerCase()}`;
+
+  return (
+    <div style={{ display: "grid", gap: 8 }}>
+      <label htmlFor={fieldId}>{label}</label>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          gap: 12,
+        }}
+      >
+        <textarea
+          id={fieldId}
+          aria-label={`${label} Markdown source`}
+          rows={6}
+          value={value}
+          onChange={(event) => onChange(event.target.value)}
+          placeholder="Write Markdown..."
+          style={{ ...inputStyle, minHeight: 160, resize: "vertical" }}
+        />
+        <div
+          className="markdown-preview"
+          aria-label={`${label} Markdown preview`}
+          style={{
+            minHeight: 160,
+            padding: "10px 12px",
+            borderRadius: 10,
+            border: "1px solid rgba(148, 163, 184, 0.3)",
+            background: "#111827",
+            color: "#e2e8f0",
+            overflowWrap: "anywhere",
+          }}
+        >
+          <div style={{ marginBottom: 8, color: "#93c5fd", fontSize: 12 }}>
+            Preview
+          </div>
+          {value.trim() ? (
+            <ReactMarkdown remarkPlugins={[remarkBreaks]}>{value}</ReactMarkdown>
+          ) : (
+            <p style={{ margin: 0, color: "#94a3b8" }}>Nothing to preview yet.</p>
           )}
         </div>
       </div>

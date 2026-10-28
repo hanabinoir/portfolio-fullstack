@@ -27,6 +27,14 @@ Start or rebuild the local stack from the repository root:
 docker compose up --build
 ```
 
+The frontend checks and installs its npm dependencies when the container starts, so dependency changes are applied even when its `node_modules` volume already exists.
+
+To rebuild and start only the frontend service (for example, after changing frontend dependencies), run from the repository root:
+
+```bash
+docker compose up --build frontend
+```
+
 The local services are available at:
 
 - Frontend: <http://localhost:3000>
