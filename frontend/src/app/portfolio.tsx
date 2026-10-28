@@ -333,17 +333,27 @@ export default function Portfolio({
                         </div>
                       )}
                       {experience.responsibilities && (
-                        <div className="experience-markdown">
-                          <ReactMarkdown remarkPlugins={[remarkBreaks]}>
-                            {experience.responsibilities}
-                          </ReactMarkdown>
+                        <div className="experience-block">
+                          <div className="experience-block-title">
+                            {text.responsibilitiesTitle}
+                          </div>
+                          <div className="experience-markdown">
+                            <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                              {experience.responsibilities}
+                            </ReactMarkdown>
+                          </div>
                         </div>
                       )}
                       {experience.contributions && (
-                        <div className="experience-markdown">
-                          <ReactMarkdown remarkPlugins={[remarkBreaks]}>
-                            {experience.contributions}
-                          </ReactMarkdown>
+                        <div className="experience-block">
+                          <div className="experience-block-title">
+                            {text.contributionsTitle}
+                          </div>
+                          <div className="experience-markdown">
+                            <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                              {experience.contributions}
+                            </ReactMarkdown>
+                          </div>
                         </div>
                       )}
                       {experience.skills.length > 0 && (
