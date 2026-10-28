@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+import remarkBreaks from "remark-breaks";
 import type {
   ExperienceResponse,
   LanguageCode,
@@ -324,19 +326,25 @@ export default function Portfolio({
                       <h3>{experience.title}</h3>
                       <p className="experience-role">{experience.role}</p>
                       {experience.overview && (
-                        <p className="experience-overview">
-                          {experience.overview}
-                        </p>
+                        <div className="experience-markdown">
+                          <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                            {experience.overview}
+                          </ReactMarkdown>
+                        </div>
                       )}
                       {experience.responsibilities && (
-                        <p className="experience-overview">
-                          {experience.responsibilities}
-                        </p>
+                        <div className="experience-markdown">
+                          <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                            {experience.responsibilities}
+                          </ReactMarkdown>
+                        </div>
                       )}
                       {experience.contributions && (
-                        <p className="experience-overview">
-                          {experience.contributions}
-                        </p>
+                        <div className="experience-markdown">
+                          <ReactMarkdown remarkPlugins={[remarkBreaks]}>
+                            {experience.contributions}
+                          </ReactMarkdown>
+                        </div>
                       )}
                       {experience.skills.length > 0 && (
                         <ul className="inline-list experience-skills">

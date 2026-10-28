@@ -92,4 +92,70 @@ describe("Portfolio", () => {
     expect(screen.getByText(/英語のコンテンツ/)).toBeTruthy();
     expect(screen.getByText("1年 6か月")).toBeTruthy();
   });
+
+  it("renders experience details as Markdown", () => {
+    render(
+      <Portfolio
+        locale="en"
+        activeSection="experiences"
+        profile={null}
+        experiences={[
+          {
+            id: "experience-1",
+            slug: "platform-engineer",
+            role: "Engineer",
+            title: "Platform Engineer",
+            overview: "**Built** a reliable platform.",
+            responsibilities: "- Improved deployments\n- Added observability",
+            contributions: "",
+            start_date: "2024-01-01",
+            end_date: null,
+            employer: "Example",
+            client: null,
+            urls: [],
+            skills: [],
+            content_language: "en",
+          },
+        ]}
+        skills={[]}
+        failed={failed}
+      />,
+    );
+
+    expect(screen.getByText("Built").tagName).toBe("STRONG");
+    expect(screen.getByText("Improved deployments").tagName).toBe("LI");
+    expect(screen.getByText("Added observability").tagName).toBe("LI");
+  });
+
+  it("renders single newlines in experience Markdown as line breaks", () => {
+    const { container } = render(
+      <Portfolio
+        locale="en"
+        activeSection="experiences"
+        profile={null}
+        experiences={[
+          {
+            id: "experience-1",
+            slug: "platform-engineer",
+            role: "Engineer",
+            title: "Platform Engineer",
+            overview: "First line\nSecond line",
+            responsibilities: "",
+            contributions: "",
+            start_date: "2024-01-01",
+            end_date: null,
+            employer: "Example",
+            client: null,
+            urls: [],
+            skills: [],
+            content_language: "en",
+          },
+        ]}
+        skills={[]}
+        failed={failed}
+      />,
+    );
+
+    expect(container.querySelector(".experience-markdown br")).not.toBeNull();
+  });
 });

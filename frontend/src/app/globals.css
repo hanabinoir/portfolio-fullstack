@@ -340,8 +340,7 @@ a:focus-visible {
   overflow-wrap: anywhere;
 }
 
-.lead,
-.experience-overview {
+.lead {
   color: var(--color-text-muted);
   font-size: 0.94rem;
   line-height: 1.8;
@@ -479,9 +478,105 @@ a:focus-visible {
   line-height: 1.6;
 }
 
-.experience-overview {
+.experience-markdown {
   margin: 0.65rem 0 0;
+  color: var(--color-text-muted);
   font-size: 0.83rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.experience-markdown > :first-child,
+.markdown-preview > :first-child {
+  margin-top: 0;
+}
+
+.experience-markdown > :last-child,
+.markdown-preview > :last-child {
+  margin-bottom: 0;
+}
+
+.experience-markdown h1,
+.experience-markdown h2,
+.experience-markdown h3,
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3 {
+  margin: 0.75rem 0 0.35rem;
+  color: var(--color-text);
+  font-family: var(--font-heading);
+  line-height: 1.4;
+}
+
+.experience-markdown h1,
+.markdown-preview h1 {
+  font-size: 1.15rem;
+}
+
+.experience-markdown h2,
+.markdown-preview h2 {
+  font-size: 1.05rem;
+}
+
+.experience-markdown h3,
+.markdown-preview h3 {
+  font-size: 0.95rem;
+}
+
+.experience-markdown p,
+.experience-markdown ul,
+.experience-markdown ol,
+.experience-markdown blockquote,
+.markdown-preview p,
+.markdown-preview ul,
+.markdown-preview ol,
+.markdown-preview blockquote {
+  margin: 0.55rem 0 0;
+}
+
+.experience-markdown ul,
+.experience-markdown ol,
+.markdown-preview ul,
+.markdown-preview ol {
+  padding-left: 1.35rem;
+}
+
+.experience-markdown a,
+.markdown-preview a {
+  color: var(--color-accent);
+  text-underline-offset: 0.18em;
+}
+
+.experience-markdown code,
+.markdown-preview code {
+  padding: 0.08rem 0.28rem;
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  background: var(--color-surface-raised);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.experience-markdown pre,
+.markdown-preview pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-raised);
+}
+
+.experience-markdown pre code,
+.markdown-preview pre code {
+  padding: 0;
+  border: 0;
+}
+
+.experience-markdown blockquote,
+.markdown-preview blockquote {
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--color-accent);
+  color: var(--color-text-muted);
 }
 
 .experience-skills {

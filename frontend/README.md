@@ -5,6 +5,7 @@ The frontend is the public portfolio experience, built with Next.js App Router, 
 ## Responsibilities
 
 - Present the Profile, Experiences, and Skills sections in a responsive, accessible interface.
+- Render experience details as Markdown and provide a plain-text editor with a live Markdown preview in the admin.
 - Fetch public portfolio data from the backend API. Keep API response types aligned with the backend OpenAPI schema.
 - Keep presentation and navigation concerns in the frontend; private profile data must not be requested or exposed here.
 
