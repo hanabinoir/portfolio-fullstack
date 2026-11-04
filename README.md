@@ -6,8 +6,8 @@ A Docker Compose starter for a bilingual developer portfolio built with Django R
 
 - [Frontend guide](frontend/README.md) — Next.js application, API usage, and UI guidance.
 - [Backend guide](backend/README.md) — Django API, domain apps, endpoints, and backend checks.
+- [Vercel deployment & CI/CD](docs/deployment-vercel.md) — Vercel setup and GitHub Actions pipeline.
 - [Architecture notes](docs/architecture.md) — domain boundaries and privacy requirements.
-- [README v0.2.0](README_v0.2.0.md) — full product and implementation brief.
 
 ## Local configuration
 
