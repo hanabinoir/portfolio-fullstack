@@ -46,7 +46,9 @@ def test_admin_user_can_access_private_profile_when_record_exists():
     PrivateProfile.objects.create(profile=profile, address="123 Market St")
 
     User = get_user_model()
-    user = User.objects.create_user(username="admin", password="secret", is_staff=True, is_superuser=True)
+    user = User.objects.create_user(
+        username="admin", password="secret", is_staff=True, is_superuser=True
+    )
 
     client = Client()
     client.force_login(user)

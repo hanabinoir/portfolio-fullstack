@@ -11,7 +11,18 @@ class SkillSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Skill
-        fields = ["id", "name", "slug", "category", "display_name", "description", "duration_months", "is_featured", "order", "content_language"]
+        fields = [
+            "id",
+            "name",
+            "slug",
+            "category",
+            "display_name",
+            "description",
+            "duration_months",
+            "is_featured",
+            "order",
+            "content_language",
+        ]
 
     def _lang(self):
         return get_requested_language(self.context.get("request"), self.context.get("lang"), "en")
@@ -41,4 +52,12 @@ class SkillTranslationSerializer(serializers.ModelSerializer):
 class SkillSourceClaimSerializer(serializers.ModelSerializer):
     class Meta:
         model = SkillSourceClaim
-        fields = ["id", "source_language", "source_document", "original_name", "original_duration_text", "notes", "review_status"]
+        fields = [
+            "id",
+            "source_language",
+            "source_document",
+            "original_name",
+            "original_duration_text",
+            "notes",
+            "review_status",
+        ]

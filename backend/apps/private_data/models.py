@@ -4,7 +4,9 @@ from apps.common.models import UUIDModel
 
 
 class PrivateProfile(UUIDModel):
-    profile = models.OneToOneField("profile.Profile", on_delete=models.CASCADE, related_name="private_profile")
+    profile = models.OneToOneField(
+        "profile.Profile", on_delete=models.CASCADE, related_name="private_profile"
+    )
     address = models.TextField(blank=True)
     phone_number = models.CharField(max_length=60, blank=True)
     citizenship = models.CharField(max_length=120, blank=True)

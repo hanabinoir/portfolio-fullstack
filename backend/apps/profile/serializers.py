@@ -1,7 +1,12 @@
 from rest_framework import serializers
 
 from apps.common.translation import get_requested_language, get_translation_for
-from apps.profile.models import Profile, ProfileLink, ProfileSpokenLanguage, ProfileTranslation, SpokenLanguage
+from apps.profile.models import (
+    Profile,
+    ProfileLink,
+    ProfileSpokenLanguage,
+    ProfileTranslation,
+)
 
 
 class ProfileLinkSerializer(serializers.ModelSerializer):
@@ -20,7 +25,10 @@ class ProfileSpokenLanguageSerializer(serializers.ModelSerializer):
     def get_language_name(self, obj):
         language = obj.spoken_language
         lang = self.context.get("lang", "en")
-        translation = language.translations.filter(language_code=lang).first() or language.translations.filter(language_code="en").first()
+        translation = (
+            language.translations.filter(language_code=lang).first()
+            or language.translations.filter(language_code="en").first()
+        )
         return translation.label if translation else language.canonical_name
 
 
@@ -34,7 +42,17 @@ class ProfileSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Profile
-        fields = ["id", "profile_picture_url", "is_active", "display_name", "headline", "summary", "links", "spoken_languages", "content_language"]
+        fields = [
+            "id",
+            "profile_picture_url",
+            "is_active",
+            "display_name",
+            "headline",
+            "summary",
+            "links",
+            "spoken_languages",
+            "content_language",
+        ]
 
     def _lang(self):
         return get_requested_language(self.context.get("request"), self.context.get("lang"), "en")

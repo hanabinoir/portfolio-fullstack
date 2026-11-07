@@ -9,7 +9,15 @@ from apps.skills.models import Skill, SkillTranslation
 class PrivateProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = PrivateProfile
-        fields = ["id", "profile", "address", "phone_number", "citizenship", "visa_type", "visa_expiry_date"]
+        fields = [
+            "id",
+            "profile",
+            "address",
+            "phone_number",
+            "citizenship",
+            "visa_type",
+            "visa_expiry_date",
+        ]
         read_only_fields = ["id", "profile"]
 
 
@@ -31,7 +39,9 @@ class AdminExperienceSerializer(serializers.Serializer):
     def _get_or_create_organization(self, name):
         if not name:
             return None
-        return Organization.objects.get_or_create(name=name.strip(), defaults={"website_url": None})[0]
+        return Organization.objects.get_or_create(
+            name=name.strip(), defaults={"website_url": None}
+        )[0]
 
     def _upsert_translation(self, experience, validated_data):
         ExperienceTranslation.objects.update_or_create(
@@ -70,7 +80,9 @@ class AdminExperienceSerializer(serializers.Serializer):
         employment = Employment.objects.create(
             employer=employer_org,
             client=client_org,
-            start_date=validated_data.get("start_date") or validated_data.get("end_date") or "2024-01-01",
+            start_date=validated_data.get("start_date")
+            or validated_data.get("end_date")
+            or "2024-01-01",
             end_date=validated_data.get("end_date"),
             employment_type="full_time",
             order=validated_data.get("order", 0),
@@ -78,9 +90,12 @@ class AdminExperienceSerializer(serializers.Serializer):
 
         experience = Experience.objects.create(
             employment=employment,
-            slug=validated_data.get("slug") or (validated_data.get("role") or "experience").lower().replace(" ", "-"),
+            slug=validated_data.get("slug")
+            or (validated_data.get("role") or "experience").lower().replace(" ", "-"),
             role=validated_data.get("role") or "Portfolio experience",
-            start_date=validated_data.get("start_date") or validated_data.get("end_date") or "2024-01-01",
+            start_date=validated_data.get("start_date")
+            or validated_data.get("end_date")
+            or "2024-01-01",
             end_date=validated_data.get("end_date"),
             is_published=validated_data.get("is_published", True),
             order=validated_data.get("order", 0),
@@ -90,7 +105,12 @@ class AdminExperienceSerializer(serializers.Serializer):
         return experience
 
     def update(self, instance, validated_data):
-        if "employer" in validated_data or "client" in validated_data or "start_date" in validated_data or "end_date" in validated_data:
+        if (
+            "employer" in validated_data
+            or "client" in validated_data
+            or "start_date" in validated_data
+            or "end_date" in validated_data
+        ):
             employment = instance.employment
             if "employer" in validated_data and validated_data.get("employer"):
                 employment.employer = self._get_or_create_organization(validated_data["employer"])
@@ -110,8 +130,21 @@ class AdminExperienceSerializer(serializers.Serializer):
         instance.order = validated_data.get("order", instance.order)
         instance.save()
 
-        if "title" in validated_data or "overview" in validated_data or "responsibilities" in validated_data or "contributions" in validated_data:
-            self._upsert_translation(instance, {**validated_data, "title": validated_data.get("title", instance.role), "overview": validated_data.get("overview", ""), "responsibilities": validated_data.get("responsibilities", "")})
+        if (
+            "title" in validated_data
+            or "overview" in validated_data
+            or "responsibilities" in validated_data
+            or "contributions" in validated_data
+        ):
+            self._upsert_translation(
+                instance,
+                {
+                    **validated_data,
+                    "title": validated_data.get("title", instance.role),
+                    "overview": validated_data.get("overview", ""),
+                    "responsibilities": validated_data.get("responsibilities", ""),
+                },
+            )
 
         if "urls" in validated_data:
             self._sync_urls(instance, validated_data["urls"])
@@ -122,7 +155,9 @@ class AdminExperienceSerializer(serializers.Serializer):
 class AdminSkillSerializer(serializers.Serializer):
     name = serializers.CharField(required=False, allow_blank=False)
     slug = serializers.SlugField(required=False, allow_blank=False)
-    category = serializers.ChoiceField(required=False, choices=[choice[0] for choice in Skill.CATEGORY_CHOICES])
+    category = serializers.ChoiceField(
+        required=False, choices=[choice[0] for choice in Skill.CATEGORY_CHOICES]
+    )
     display_name = serializers.CharField(required=False, allow_blank=False)
     description = serializers.CharField(required=False, allow_blank=True)
     duration_months = serializers.IntegerField(required=False, allow_null=True, min_value=0)
@@ -142,7 +177,8 @@ class AdminSkillSerializer(serializers.Serializer):
     def create(self, validated_data):
         skill = Skill.objects.create(
             name=validated_data.get("name") or "New skill",
-            slug=validated_data.get("slug") or (validated_data.get("name") or "new-skill").lower().replace(" ", "-"),
+            slug=validated_data.get("slug")
+            or (validated_data.get("name") or "new-skill").lower().replace(" ", "-"),
             category=validated_data.get("category", "other"),
             duration_months=validated_data.get("duration_months"),
             is_featured=validated_data.get("is_featured", False),
@@ -160,5 +196,12 @@ class AdminSkillSerializer(serializers.Serializer):
         instance.order = validated_data.get("order", instance.order)
         instance.save()
         if "display_name" in validated_data or "description" in validated_data:
-            self._upsert_translation(instance, {**validated_data, "display_name": validated_data.get("display_name", instance.name), "description": validated_data.get("description", "")})
+            self._upsert_translation(
+                instance,
+                {
+                    **validated_data,
+                    "display_name": validated_data.get("display_name", instance.name),
+                    "description": validated_data.get("description", ""),
+                },
+            )
         return instance

@@ -6,7 +6,13 @@ from apps.experiences.serializers import ExperienceSerializer
 
 
 class ExperienceViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Experience.objects.filter(is_published=True).select_related("employment", "employment__employer", "employment__client").prefetch_related("translations", "urls", "phases", "experience_skills__skill__translations")
+    queryset = (
+        Experience.objects.filter(is_published=True)
+        .select_related("employment", "employment__employer", "employment__client")
+        .prefetch_related(
+            "translations", "urls", "phases", "experience_skills__skill__translations"
+        )
+    )
     serializer_class = ExperienceSerializer
     permission_classes = [AllowAny]
     lookup_field = "slug"

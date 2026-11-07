@@ -1,6 +1,13 @@
 from django.contrib import admin
 
-from .models import Employment, Experience, ExperiencePhase, ExperienceSkill, ExperienceTranslation, ExperienceURL
+from .models import (
+    Employment,
+    Experience,
+    ExperiencePhase,
+    ExperienceSkill,
+    ExperienceTranslation,
+    ExperienceURL,
+)
 
 
 @admin.register(Employment)

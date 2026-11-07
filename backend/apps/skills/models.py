@@ -36,7 +36,9 @@ class SkillTranslation(UUIDModel):
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["skill", "language_code"], name="unique_skill_language"),
+            models.UniqueConstraint(
+                fields=["skill", "language_code"], name="unique_skill_language"
+            ),
         ]
 
     def __str__(self):
@@ -56,7 +58,9 @@ class SkillSourceClaim(UUIDModel):
     original_name = models.CharField(max_length=200)
     original_duration_text = models.CharField(max_length=200, blank=True, null=True)
     notes = models.TextField(blank=True)
-    review_status = models.CharField(max_length=20, choices=REVIEW_STATUS_CHOICES, default="pending")
+    review_status = models.CharField(
+        max_length=20, choices=REVIEW_STATUS_CHOICES, default="pending"
+    )
 
     class Meta:
         ordering = ["-created_at"]
