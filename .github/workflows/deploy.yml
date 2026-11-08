@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     # Selects the GitHub Environment (and thus its secrets/variables):
     # main -> production, staging -> staging, pull requests -> preview.
-    environment: ${{ github.ref == 'refs/heads/main' && 'production' || github.ref == 'refs/heads/staging' && 'staging' || 'preview' }}
+    environment: ${{ github.ref == 'refs/heads/main' && 'production' || github.ref == 'refs/heads/dev' && 'dev' || 'preview' }}
     env:
       VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
