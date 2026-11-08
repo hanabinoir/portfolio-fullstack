@@ -27,7 +27,9 @@ class ProfileTranslation(UUIDModel):
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["profile", "language_code"], name="unique_profile_language"),
+            models.UniqueConstraint(
+                fields=["profile", "language_code"], name="unique_profile_language"
+            ),
         ]
         ordering = ["language_code"]
 
@@ -70,13 +72,18 @@ class SpokenLanguage(UUIDModel):
 
 
 class SpokenLanguageTranslation(UUIDModel):
-    spoken_language = models.ForeignKey(SpokenLanguage, related_name="translations", on_delete=models.CASCADE)
+    spoken_language = models.ForeignKey(
+        SpokenLanguage, related_name="translations", on_delete=models.CASCADE
+    )
     language_code = models.CharField(max_length=10, choices=LANGUAGE_CODE_CHOICES, default="en")
     label = models.CharField(max_length=100)
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["spoken_language", "language_code"], name="unique_spoken_language_translation"),
+            models.UniqueConstraint(
+                fields=["spoken_language", "language_code"],
+                name="unique_spoken_language_translation",
+            ),
         ]
 
     def __str__(self):
@@ -92,13 +99,19 @@ class ProfileSpokenLanguage(UUIDModel):
     ]
 
     profile = models.ForeignKey(Profile, related_name="spoken_languages", on_delete=models.CASCADE)
-    spoken_language = models.ForeignKey(SpokenLanguage, related_name="profiles", on_delete=models.CASCADE)
-    proficiency_level = models.CharField(max_length=20, choices=PROFICIENCY_CHOICES, default="business")
+    spoken_language = models.ForeignKey(
+        SpokenLanguage, related_name="profiles", on_delete=models.CASCADE
+    )
+    proficiency_level = models.CharField(
+        max_length=20, choices=PROFICIENCY_CHOICES, default="business"
+    )
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["profile", "spoken_language"], name="unique_profile_spoken_language"),
+            models.UniqueConstraint(
+                fields=["profile", "spoken_language"], name="unique_profile_spoken_language"
+            ),
         ]
         ordering = ["order", "spoken_language__canonical_name"]
 

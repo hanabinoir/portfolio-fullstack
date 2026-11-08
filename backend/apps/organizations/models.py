@@ -15,13 +15,17 @@ class Organization(UUIDModel):
 
 
 class OrganizationTranslation(UUIDModel):
-    organization = models.ForeignKey(Organization, related_name="translations", on_delete=models.CASCADE)
+    organization = models.ForeignKey(
+        Organization, related_name="translations", on_delete=models.CASCADE
+    )
     language_code = models.CharField(max_length=10, choices=LANGUAGE_CODE_CHOICES, default="en")
     display_name = models.CharField(max_length=200)
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["organization", "language_code"], name="unique_organization_language"),
+            models.UniqueConstraint(
+                fields=["organization", "language_code"], name="unique_organization_language"
+            ),
         ]
 
     def __str__(self):

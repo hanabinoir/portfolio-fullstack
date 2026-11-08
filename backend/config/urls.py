@@ -8,12 +8,14 @@ from drf_spectacular.views import (
 
 
 def api_root(request):
-    return JsonResponse({
-        "name": "Developer Portfolio API",
-        "version": "v1",
-        "openapi": "/api/v1/openapi/",
-        "docs": "/api/v1/docs/",
-    })
+    return JsonResponse(
+        {
+            "name": "Developer Portfolio API",
+            "version": "v1",
+            "openapi": "/api/v1/openapi/",
+            "docs": "/api/v1/docs/",
+        }
+    )
 
 
 urlpatterns = [
@@ -26,5 +28,7 @@ urlpatterns = [
     path("api/v1/skills/", include("apps.skills.urls")),
     path("api/v1/admin/", include("apps.private_data.urls")),
     path("api/v1/openapi/", SpectacularAPIView.as_view(), name="openapi-schema"),
-    path("api/v1/docs/", SpectacularSwaggerView.as_view(url_name="openapi-schema"), name="swagger-ui"),
+    path(
+        "api/v1/docs/", SpectacularSwaggerView.as_view(url_name="openapi-schema"), name="swagger-ui"
+    ),
 ]

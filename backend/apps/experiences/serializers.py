@@ -1,7 +1,14 @@
 from rest_framework import serializers
 
 from apps.common.translation import get_requested_language, get_translation_for
-from apps.experiences.models import Employment, Experience, ExperiencePhase, ExperienceSkill, ExperienceTranslation, ExperienceURL
+from apps.experiences.models import (
+    Employment,
+    Experience,
+    ExperiencePhase,
+    ExperienceSkill,
+    ExperienceTranslation,
+    ExperienceURL,
+)
 
 
 class ExperiencePhaseSerializer(serializers.ModelSerializer):
@@ -25,7 +32,10 @@ class ExperienceSkillSerializer(serializers.ModelSerializer):
 
     def get_skill_name(self, obj):
         lang = self.context.get("lang", "en")
-        translation = obj.skill.translations.filter(language_code=lang).first() or obj.skill.translations.filter(language_code="en").first()
+        translation = (
+            obj.skill.translations.filter(language_code=lang).first()
+            or obj.skill.translations.filter(language_code="en").first()
+        )
         return translation.display_name if translation else obj.skill.name
 
 
@@ -89,7 +99,10 @@ class ExperienceSerializer(serializers.ModelSerializer):
     def get_employer(self, obj):
         lang = self._lang()
         name = obj.employment.employer.name
-        translation = obj.employment.employer.translations.filter(language_code=lang).first() or obj.employment.employer.translations.filter(language_code="en").first()
+        translation = (
+            obj.employment.employer.translations.filter(language_code=lang).first()
+            or obj.employment.employer.translations.filter(language_code="en").first()
+        )
         return translation.display_name if translation else name
 
     def get_client(self, obj):
@@ -97,7 +110,10 @@ class ExperienceSerializer(serializers.ModelSerializer):
             return None
         lang = self._lang()
         name = obj.employment.client.name
-        translation = obj.employment.client.translations.filter(language_code=lang).first() or obj.employment.client.translations.filter(language_code="en").first()
+        translation = (
+            obj.employment.client.translations.filter(language_code=lang).first()
+            or obj.employment.client.translations.filter(language_code="en").first()
+        )
         return translation.display_name if translation else name
 
     def get_content_language(self, obj):

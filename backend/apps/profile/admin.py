@@ -1,6 +1,13 @@
 from django.contrib import admin
 
-from .models import Profile, ProfileLink, ProfileSpokenLanguage, ProfileTranslation, SpokenLanguage, SpokenLanguageTranslation
+from .models import (
+    Profile,
+    ProfileLink,
+    ProfileSpokenLanguage,
+    ProfileTranslation,
+    SpokenLanguage,
+    SpokenLanguageTranslation,
+)
 
 
 @admin.register(Profile)

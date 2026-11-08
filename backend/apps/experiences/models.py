@@ -13,7 +13,9 @@ class Employment(UUIDModel):
         ("other", "Other"),
     ]
 
-    employer = models.ForeignKey("organizations.Organization", related_name="employments", on_delete=models.PROTECT)
+    employer = models.ForeignKey(
+        "organizations.Organization", related_name="employments", on_delete=models.PROTECT
+    )
     client = models.ForeignKey(
         "organizations.Organization",
         related_name="client_employments",
@@ -23,14 +25,17 @@ class Employment(UUIDModel):
     )
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
-    employment_type = models.CharField(max_length=20, choices=EMPLOYMENT_TYPE_CHOICES, default="full_time")
+    employment_type = models.CharField(
+        max_length=20, choices=EMPLOYMENT_TYPE_CHOICES, default="full_time"
+    )
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
         ordering = ["order", "start_date"]
         constraints = [
             models.CheckConstraint(
-                condition=models.Q(end_date__isnull=True) | models.Q(end_date__gte=models.F("start_date")),
+                condition=models.Q(end_date__isnull=True)
+                | models.Q(end_date__gte=models.F("start_date")),
                 name="employment_end_date_after_start",
             )
         ]
@@ -58,7 +63,8 @@ class Experience(UUIDModel):
         ordering = ["order", "start_date"]
         constraints = [
             models.CheckConstraint(
-                condition=models.Q(end_date__isnull=True) | models.Q(end_date__gte=models.F("start_date")),
+                condition=models.Q(end_date__isnull=True)
+                | models.Q(end_date__gte=models.F("start_date")),
                 name="experience_end_date_after_start",
             )
         ]
@@ -73,7 +79,9 @@ class Experience(UUIDModel):
 
 
 class ExperienceTranslation(UUIDModel):
-    experience = models.ForeignKey(Experience, related_name="translations", on_delete=models.CASCADE)
+    experience = models.ForeignKey(
+        Experience, related_name="translations", on_delete=models.CASCADE
+    )
     language_code = models.CharField(max_length=10, choices=LANGUAGE_CODE_CHOICES, default="en")
     title = models.CharField(max_length=200)
     overview = models.TextField(blank=True)
@@ -82,7 +90,9 @@ class ExperienceTranslation(UUIDModel):
 
     class Meta:
         constraints = [
-            models.UniqueConstraint(fields=["experience", "language_code"], name="unique_experience_language"),
+            models.UniqueConstraint(
+                fields=["experience", "language_code"], name="unique_experience_language"
+            ),
         ]
 
     def __str__(self):
@@ -119,7 +129,9 @@ class ExperiencePhase(UUIDModel):
     class Meta:
         ordering = ["phase_order", "phase_name"]
         constraints = [
-            models.UniqueConstraint(fields=["experience", "phase_order"], name="unique_experience_phase_order"),
+            models.UniqueConstraint(
+                fields=["experience", "phase_order"], name="unique_experience_phase_order"
+            ),
         ]
 
     def __str__(self):
@@ -127,8 +139,12 @@ class ExperiencePhase(UUIDModel):
 
 
 class ExperienceSkill(UUIDModel):
-    experience = models.ForeignKey(Experience, related_name="experience_skills", on_delete=models.CASCADE)
-    skill = models.ForeignKey("skills.Skill", related_name="skill_experiences", on_delete=models.CASCADE)
+    experience = models.ForeignKey(
+        Experience, related_name="experience_skills", on_delete=models.CASCADE
+    )
+    skill = models.ForeignKey(
+        "skills.Skill", related_name="skill_experiences", on_delete=models.CASCADE
+    )
     order = models.PositiveIntegerField(default=0)
 
     class Meta:
