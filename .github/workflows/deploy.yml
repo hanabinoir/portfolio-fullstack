@@ -55,20 +55,17 @@ jobs:
           esac
 
       - name: Pull Vercel settings
-        working-directory: ${{ matrix.app }}
         env:
           VERCEL_PROJECT_ID: ${{ vars[matrix.project_id_var] }}
         run: vercel pull --yes --environment=$TARGET --token="$VERCEL_TOKEN"
 
       - name: Build
-        working-directory: ${{ matrix.app }}
         env:
           VERCEL_PROJECT_ID: ${{ vars[matrix.project_id_var] }}
         run: vercel build $DEPLOY_FLAGS --token="$VERCEL_TOKEN"
 
       - name: Deploy
         id: deploy
-        working-directory: ${{ matrix.app }}
         env:
           VERCEL_PROJECT_ID: ${{ vars[matrix.project_id_var] }}
         run: |
